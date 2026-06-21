@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rayelle · 게임 클라이언트 개발자 포트폴리오 — Project Volcain</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<nav>
+  <div class="nav-inner">
+    <div class="brand">양민호<span class="dot">.</span> <span style="color:var(--text-faint);font-weight:500;">Unity Client Programmer</span></div>
+    <div class="nav-links">
+      <a href="#about">소개</a>
+      <a href="#skills">기술 스택</a>
+      <a href="#competency">핵심 역량</a>
+      <a href="#project">프로젝트</a>
+      <a href="#systems">대표 기여</a>
+      <a href="#troubleshooting">문제 해결</a>
+      <a href="#contact">연락처</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====================== HERO ====================== -->
+<section id="about" class="hero">
+  <div class="hero-tag"><span class="pulse"></span> Unity 6 · 2D 그리드 전술 SRPG · 팀 캡스톤 프로젝트</div>
+  <h1>게임 플레이의 뼈대를 설계하는<br /><span class="grad">Unity 클라이언트 개발자</span></h1>
+  <p class="lead">
+    Addressable 기반 리소스 관리, 매니저 프레임워크, 데이터 기반 인프라 같은 <b style="color:var(--text)">엔진 토대</b>부터
+    턴제 전투 코어·그리드 맵·분기형 컷신·연출까지 —
+    <b style="color:var(--text)">게임 클라이언트의 거의 모든 주요 시스템을 직접 설계하고 구현</b>했습니다.
+    1년에 걸친 팀 프로젝트 <b style="color:var(--text)">Project Volcain</b>에서 전체 커밋의 42%를 담당한 단일 최다 기여자입니다.
+  </p>
+
+  <div class="stat-grid">
+    <div class="stat"><div class="num a">494</div><div class="label">총 커밋 수</div></div>
+    <div class="stat"><div class="num b">42%</div><div class="label">전체 기여 비중 · 1위</div></div>
+    <div class="stat"><div class="num c">12<span style="font-size:1.1rem">개월+</span></div><div class="label">지속 개발 기간 · 진행 중</div></div>
+    <div class="stat"><div class="num d">7</div><div class="label">설계·구현 핵심 시스템</div></div>
+  </div>
+</section>
+
+<!-- ====================== SKILLS ====================== -->
+<section id="skills">
+  <span class="eyebrow">Skills</span>
+  <h2>기술 스택</h2>
+  <p class="section-sub">프로젝트에서 실제 사용한 언어 · 엔진 · 라이브러리입니다.</p>
+
+  <div class="techstack">
+    <div class="stack-group">
+      <span class="stack-key">언어</span>
+      <div class="stack-vals">
+        <span class="hl">C#</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <span class="stack-key">엔진</span>
+      <div class="stack-vals">
+        <span class="hl">Unity 6 <span style="opacity:.6;font-weight:400">(6000.1.17f1)</span></span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <span class="stack-key">라이브러리</span>
+      <div class="stack-vals">
+        <span>Addressables</span>
+        <span>UniTask</span>
+        <span>DOTween</span>
+        <span>Newtonsoft.Json</span>
+        <span>Shader Graph</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SKILLS ====================== -->
+<section id="competency">
+  <span class="eyebrow">Core Competencies</span>
+  <h2>핵심 역량</h2>
+  <p class="section-sub">엔진·언어를 넘어, 게임 시스템을 "구조"로 설계하는 데 강점이 있습니다.</p>
+
+  <div class="skill-cols">
+    <div class="skill-col">
+      <h3>게임플레이 시스템</h3>
+      <ul>
+        <li>턴제 전투 루프 · 큐 기반 TurnManager</li>
+        <li>Wave / Stage 진행 구조</li>
+        <li>Creature 상태 머신 &amp; AI</li>
+        <li>스킬 · 버프/CC · 투사체 시스템</li>
+        <li>그리드 기반 / 타일 이동</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h3>아키텍처 · 데이터</h3>
+      <ul>
+        <li>로케이터 패턴 매니저 시스템</li>
+        <li>Addressable 리소스 관리 / 프리로드</li>
+        <li>Excel → JSON 데이터 파이프라인</li>
+        <li>enum 기반 UI 자동 바인딩</li>
+        <li>이벤트 아키텍처 · SaveData 직렬화</li>
+      </ul>
+    </div>
+    <div class="skill-col">
+      <h3>연출 · 도구</h3>
+      <ul>
+        <li>분기형 컷신 &amp; Timeline 시스템</li>
+        <li>커스텀 에디터 툴 제작</li>
+        <li>Shader Graph (Outline·Shimmer 등)</li>
+        <li>파티클 / VFX 연출</li>
+        <li>FMOD 런타임 사운드 파이프라인</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PROJECT ====================== -->
+<section id="project">
+  <span class="eyebrow">Project</span>
+  <h2>Project Volcain</h2>
+  <p class="section-sub">Unity 6로 제작한 2D 그리드 전술 SRPG</p>
+
+  <div class="project-card">
+    <p class="lead" style="margin:0">
+      타일 기반 턴제 전투를 중심으로, <b style="color:var(--text)">사기·충성도 시스템</b>과 플레이어/몬스터/환경 오브젝트를 분리한
+      구조의 전술 SRPG입니다. 전투 스테이지와 기숙사(메타 게임) 씬, 스토리 컷신이 유기적으로 연결되는 형태로,
+      저는 이 게임의 <b style="color:var(--text)">클라이언트 핵심 시스템 전반</b>을 담당했습니다.
+    </p>
+    <div class="meta-grid">
+      <div><div class="k">장르</div><div class="v">2D 전술 SRPG</div></div>
+      <div><div class="k">엔진 / 언어</div><div class="v">Unity 6 · C#</div></div>
+      <div><div class="k">개발 기간</div><div class="v">2025.07 – 진행 중</div></div>
+      <div><div class="k">담당</div><div class="v">클라이언트 핵심 시스템</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SYSTEMS ====================== -->
+<section id="systems">
+  <span class="eyebrow">What I Built</span>
+  <h2>대표 기여 시스템</h2>
+  <p class="section-sub">설계부터 구현·디버깅까지 직접 담당한 7개 핵심 시스템 — 각 코드 블록은 클릭하면 펼쳐집니다</p>
+
+  <!-- ========== 1. Addressable ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">📦</span>
+      <div>
+        <span class="role-tag">설계 · 구현</span>
+        <h3>Addressable 기반 리소스 관리 시스템</h3>
+        <div class="sys-items">ResourceManager.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">모든 리소스를 Addressable <b>키 문자열</b>로 추상화하고, 로드·생성·풀링·해제를 ResourceManager 한 곳으로 일원화했습니다.</p>
+    <ul class="sys-list">
+      <li><b>label 단위 비동기 프리로드</b> — 게임 시작 시 그룹 단위로 로드하며 진행률 콜백으로 <b>로딩 바</b> 구동</li>
+      <li>접두/접미사(prefix·suffix) 기반 일괄 로드 지원으로 데이터/스프라이트 그룹 관리</li>
+      <li>로드 결과 캐싱 + 핸들 관리로 중복 로드 방지 및 일괄 <code>Release</code></li>
+      <li><code>Instantiate()</code>에서 풀링 여부를 한 번에 처리 — 호출부는 키만 알면 됨</li>
+    </ul>
+    <div class="tags"><span class="tag">Addressables</span><span class="tag">Async Preload</span><span class="tag">Pooling</span><span class="tag">Handle 관리</span></div>
+
+    <div class="rf-viz">
+      <div class="rf-cap">리소스 처리 흐름 — 호출부는 <b>키 문자열</b>만 알면 됩니다</div>
+      <div class="rf-row">
+        <div class="rf-box">
+          <div class="t">① 게임 시작</div>
+          <div class="s">label 그룹 프리로드 요청</div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-box accent">
+          <div class="t">② LoadAllAsync(label)</div>
+          <div class="s">비동기 일괄 로드<br>진행률 콜백 → 로딩 바</div>
+          <div class="rf-bar"><i></i></div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-box">
+          <div class="t">③ 캐시 + 핸들 보관</div>
+          <div class="s"><code>_resources</code> · <code>_handles</code><br>중복 로드 방지</div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-box">
+          <div class="t">④ Instantiate("key")</div>
+          <div class="s">키만 넘기면 생성</div>
+          <div class="rf-branch">
+            <span>pooling O → Pool.Pop()</span>
+            <span>pooling X → Object.Instantiate()</span>
+          </div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-box">
+          <div class="t">⑤ GameObject</div>
+          <div class="s">씬·시스템에 반환</div>
+        </div>
+      </div>
+
+      <div class="rf-row rel">
+        <div class="rf-box">
+          <div class="t">씬 전환 · Clear()</div>
+          <div class="s">사용 끝난 그룹 정리</div>
+        </div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-box">
+          <div class="t">Addressables.Release()</div>
+          <div class="s">보관한 전체 핸들 일괄 해제 → 메모리 회수</div>
+        </div>
+      </div>
+    </div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">ResourceManager.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// Addressable 리소스를 키 문자열로 추상화해 메모리/핸들 관리</span>
+<span class="k">private</span> <span class="t">Dictionary</span>&lt;<span class="k">string</span>, <span class="t">Object</span>&gt; _resources = <span class="k">new</span>();
+<span class="k">private</span> <span class="t">Dictionary</span>&lt;<span class="k">string</span>, <span class="t">AsyncOperationHandle</span>&gt; _handles = <span class="k">new</span>();
+
+<span class="c">// label 단위로 모든 리소스를 비동기 프리로드 + 진행률 콜백(로딩 바)</span>
+<span class="k">public void</span> LoadAllAsync&lt;<span class="t">T</span>&gt;(<span class="k">string</span> label, <span class="t">Action</span>&lt;<span class="k">string</span>, <span class="k">int</span>, <span class="k">int</span>&gt; callback) <span class="k">where</span> <span class="t">T</span> : <span class="t">Object</span>
+{
+    <span class="k">var</span> opHandle = <span class="t">Addressables</span>.LoadResourceLocationsAsync(label, <span class="k">typeof</span>(<span class="t">T</span>));
+    opHandle.Completed += (op) =&gt;
+    {
+        <span class="k">int</span> loadCount = 0, totalCount = op.Result.Count;
+        <span class="k">foreach</span> (<span class="k">var</span> result <span class="k">in</span> op.Result)
+            LoadAsync&lt;<span class="t">T</span>&gt;(result.PrimaryKey, (obj) =&gt;
+            {
+                loadCount++;
+                callback?.Invoke(result.PrimaryKey, loadCount, totalCount); <span class="c">// 로딩 바 갱신</span>
+            });
+    };
+}
+
+<span class="c">// 호출부는 키만 알면 됨 — 생성·풀링까지 한 곳에서 일원화</span>
+<span class="k">public</span> <span class="t">GameObject</span> Instantiate(<span class="k">string</span> key, <span class="t">Transform</span> parent = <span class="k">null</span>, <span class="k">bool</span> pooling = <span class="k">false</span>)
+{
+    <span class="t">GameObject</span> prefab = Load&lt;<span class="t">GameObject</span>&gt;(key);
+    <span class="k">if</span> (pooling) <span class="k">return</span> Managers.Pool.Pop(prefab);
+    <span class="t">GameObject</span> go = <span class="t">Object</span>.Instantiate(prefab, parent);
+    go.name = prefab.name;
+    <span class="k">return</span> go;
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 리소스 접근을 키 기반으로 추상화하고 label 프리로드·진행률·풀링을 한 클래스에 모아, 씬/시스템 어디서든 동일한 방식으로 리소스를 다루도록 만들었습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">ResourceManager.cs — 접두사 일괄 로드 · 핸들 해제</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// 키가 특정 접두사로 시작하는 리소스를 모두 비동기 로드 (그룹 단위 관리)</span>
+<span class="k">public void</span> LoadAllAsyncByPrefix&lt;<span class="t">T</span>&gt;(<span class="k">string</span> prefix, <span class="t">Action</span>&lt;<span class="k">string</span>, <span class="k">int</span>, <span class="k">int</span>&gt; callback) <span class="k">where</span> <span class="t">T</span> : <span class="t">Object</span>
+{
+    <span class="k">var</span> matchingKeys = <span class="k">new</span> <span class="t">HashSet</span>&lt;<span class="k">string</span>&gt;();
+    <span class="k">foreach</span> (<span class="k">var</span> locator <span class="k">in</span> <span class="t">Addressables</span>.ResourceLocators)
+        <span class="k">foreach</span> (<span class="k">var</span> key <span class="k">in</span> locator.Keys)
+            <span class="k">if</span> (key <span class="k">is</span> <span class="k">string</span> s &amp;&amp; s.StartsWith(prefix) &amp;&amp; s.Length &gt; prefix.Length)
+                matchingKeys.Add(s);
+
+    <span class="k">int</span> loadCount = 0, totalCount = matchingKeys.Count;
+    <span class="k">foreach</span> (<span class="k">var</span> key <span class="k">in</span> matchingKeys)
+        LoadAsync&lt;<span class="t">T</span>&gt;(key, (obj) =&gt; { loadCount++; callback?.Invoke(key, loadCount, totalCount); });
+}
+
+<span class="c">// 씬 종료 시 캐시를 비우고 보관 중인 핸들을 일괄 Release → 메모리 누수 방지</span>
+<span class="k">public void</span> Clear()
+{
+    _resources.Clear();
+    <span class="k">foreach</span> (<span class="k">var</span> handle <span class="k">in</span> _handles) <span class="t">Addressables</span>.Release(handle);
+    _handles.Clear();
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 접두/접미사 패턴으로 리소스를 그룹 로드하고, 보관 중인 <code>AsyncOperationHandle</code>을 일괄 <code>Release</code>해 씬 전환 시 메모리를 안전하게 회수합니다.</p>
+    </details>
+  </article>
+
+  <!-- ========== 2. 핵심 프레임워크 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">🏗️</span>
+      <div>
+        <span class="role-tag">아키텍처</span>
+        <h3>핵심 프레임워크 — 매니저 로케이터 + UI 자동 바인딩</h3>
+        <div class="sys-items">Managers.cs · UI_Base.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">게임 전체가 올라탈 토대를 직접 설계했습니다. 전역 서비스는 <b>로케이터 패턴</b>으로, UI 참조는 <b>enum 기반 자동 바인딩</b>으로 통일했습니다.</p>
+    <ul class="sys-list">
+      <li>모든 전역 서비스를 <code>Managers.XXX</code> 단일 진입점으로 통일</li>
+      <li><b>Core(엔진) ↔ Contents(게임 로직)</b> 계층 분리 — 의존 방향을 단방향으로 강제</li>
+      <li>UI는 인스펙터 드래그 없이 <b>enum 이름으로 자식 컴포넌트를 자동 탐색·연결</b></li>
+      <li>프리팹 구조가 바뀌어도 참조가 끊기지 않는 견고한 UI 베이스 클래스 구축</li>
+    </ul>
+    <div class="tags"><span class="tag">Service Locator</span><span class="tag">계층 분리</span><span class="tag">Reflection Bind</span><span class="tag">UI Framework</span></div>
+
+    <div class="uml-diagram">
+      <div class="dgm-title">Architecture <span class="dim">· Service Locator Class Diagram</span></div>
+      <svg viewBox="0 0 760 415" role="img" aria-label="Managers 서비스 로케이터 클래스 다이어그램">
+        <defs>
+          <marker id="mdep" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+            <path d="M1,1 L10,5 L1,9" fill="none" stroke="#8c99b5" stroke-width="1.3"/>
+          </marker>
+        </defs>
+
+        <!-- ===== Managers 클래스 박스 (Singleton) ===== -->
+        <rect x="275" y="18" width="210" height="132" rx="7" fill="#161d2c" stroke="#ff8a63" stroke-width="1.5"/>
+        <path d="M276.5,25 a6,6 0 0 1 6,-6 h197 a6,6 0 0 1 6,6 v27 h-209 z" fill="rgba(255,138,99,.16)"/>
+        <line x1="275" y1="52" x2="485" y2="52" stroke="#ff8a63" stroke-opacity=".5"/>
+        <line x1="275" y1="100" x2="485" y2="100" stroke="#25304a"/>
+        <text x="380" y="33" text-anchor="middle" font-size="9.5" fill="#ffb13d" font-family="ui-monospace,Consolas,monospace">«Singleton»</text>
+        <text x="380" y="47" text-anchor="middle" font-size="13" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">Managers</text>
+        <g font-size="9.5" font-family="ui-monospace,Consolas,monospace">
+          <text x="285" y="68" fill="#8c99b5"><tspan fill="#ff8a63">-</tspan> _resource : <tspan fill="#5ea2ff">ResourceManager</tspan></text>
+          <text x="285" y="83" fill="#8c99b5"><tspan fill="#ff8a63">-</tspan> _data : <tspan fill="#5ea2ff">DataManager</tspan></text>
+          <text x="285" y="98" fill="#6b7794"><tspan fill="#ff8a63">-</tspan> … 18개 매니저 인스턴스</text>
+          <text x="285" y="116" fill="#8c99b5"><tspan fill="#4fd6a0">+</tspan> Resource <tspan fill="#6b7794">: ResourceManager {static}</tspan></text>
+          <text x="285" y="131" fill="#8c99b5"><tspan fill="#4fd6a0">+</tspan> Data <tspan fill="#6b7794">: DataManager {static}</tspan></text>
+          <text x="285" y="146" fill="#6b7794"><tspan fill="#4fd6a0">+</tspan> … 정적 단일 진입점 {static}</text>
+        </g>
+
+        <!-- ===== 컴포지션 커넥터 ===== -->
+        <polygon points="380,150 387,159 380,168 373,159" fill="#ff8a63"/>
+        <path d="M380,168 V184 H205 V197" fill="none" stroke="#3a4a6e" stroke-width="1.3"/>
+        <path d="M380,184 H555 V197" fill="none" stroke="#3a4a6e" stroke-width="1.3"/>
+        <text x="392" y="180" font-size="9" fill="#6b7794" font-family="ui-monospace,Consolas,monospace">◆ composes 18</text>
+
+        <!-- ===== Core 패키지 ===== -->
+        <path d="M55,197 h120 v15 h180 v90 a4,4 0 0 1 -4,4 h-292 a4,4 0 0 1 -4,-4 v-101 z" fill="#161d2c" stroke="#2f6f5a" stroke-width="1.4"/>
+        <path d="M55,197 h120 v15 h-120 z" fill="rgba(79,214,160,.14)" stroke="#2f6f5a" stroke-width="1.4"/>
+        <text x="64" y="208" font-size="9.5" font-weight="700" fill="#4fd6a0" font-family="ui-monospace,Consolas,monospace">«package» Core</text>
+        <text x="350" y="227" text-anchor="end" font-size="8.5" fill="#6b7794" font-family="system-ui,sans-serif">엔진 기반</text>
+        <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#aab6d0">
+          <text x="68" y="244">+ ResourceManager</text><text x="215" y="244">+ DataManager</text>
+          <text x="68" y="263">+ PoolManager</text><text x="215" y="263">+ SceneManagerEx</text>
+          <text x="68" y="282">+ SoundManager</text><text x="215" y="282">+ UIManager</text>
+        </g>
+
+        <!-- ===== Contents 패키지 ===== -->
+        <path d="M405,197 h130 v15 h170 v142 a4,4 0 0 1 -4,4 h-292 a4,4 0 0 1 -4,-4 v-153 z" fill="#161d2c" stroke="#2f4a7a" stroke-width="1.4"/>
+        <path d="M405,197 h130 v15 h-130 z" fill="rgba(94,162,255,.14)" stroke="#2f4a7a" stroke-width="1.4"/>
+        <text x="414" y="208" font-size="9.5" font-weight="700" fill="#5ea2ff" font-family="ui-monospace,Consolas,monospace">«package» Contents</text>
+        <text x="700" y="227" text-anchor="end" font-size="8.5" fill="#6b7794" font-family="system-ui,sans-serif">게임 로직</text>
+        <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#aab6d0">
+          <text x="418" y="244">+ GameManager</text><text x="565" y="244">+ ObjectManager</text>
+          <text x="418" y="263">+ MapManager</text><text x="565" y="263">+ TurnManager</text>
+          <text x="418" y="282">+ ControllerManager</text><text x="565" y="282">+ ListenerManager</text>
+          <text x="418" y="301">+ CutSceneManager</text><text x="565" y="301">+ StageManager</text>
+          <text x="418" y="320">+ EventManager</text><text x="565" y="320">+ OperatorManager</text>
+          <text x="418" y="339">+ TutorialManager</text><text x="565" y="339">+ TimelineManager</text>
+        </g>
+
+        <!-- ===== 의존성 (단방향): Contents → Core ===== -->
+        <line x1="405" y1="262" x2="357" y2="262" stroke="#8c99b5" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#mdep)"/>
+        <text x="381" y="255" text-anchor="middle" font-size="8.5" fill="#9aa7c2" font-family="ui-monospace,Consolas,monospace">«use»</text>
+        <text x="380" y="400" text-anchor="middle" font-size="10" fill="#8c99b5" font-family="system-ui,sans-serif">의존은 Contents → Core 단방향 — Core는 Contents를 참조하지 않음</text>
+      </svg>
+
+      <div class="dgm-legend">
+        <span><i style="background:#ff8a63"></i>Singleton (Managers)</span>
+        <span><i style="background:#4fd6a0"></i>Core 패키지</span>
+        <span><i style="background:#5ea2ff"></i>Contents 패키지</span>
+        <span><span style="color:#ff8a63">◆</span> composition</span>
+        <span><span class="ln dash"></span>dependency</span>
+      </div>
+      <div class="dgm-tag">Volcain · Core Framework</div>
+    </div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">Managers.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="k">public class</span> <span class="t">Managers</span> : <span class="t">Singleton</span>&lt;<span class="t">Managers</span>&gt;
+{
+    <span class="c">// ───── 필드: 전역 서비스 인스턴스 ─────</span>
+    <span class="k">private</span> <span class="t">DataManager</span>     _data     = <span class="k">new</span> <span class="t">DataManager</span>();
+    <span class="k">private</span> <span class="t">ResourceManager</span> _resource = <span class="k">new</span> <span class="t">ResourceManager</span>();
+    <span class="k">private</span> <span class="t">TurnManager</span>     _turn     = <span class="k">new</span> <span class="t">TurnManager</span>();
+    <span class="k">private</span> <span class="t">MapManager</span>      _map      = <span class="k">new</span> <span class="t">MapManager</span>();
+    <span class="k">private</span> <span class="t">CutSceneManager</span> _cutscene = <span class="k">new</span> <span class="t">CutSceneManager</span>();
+
+    <span class="c">// ───── 프로퍼티: 정적 단일 진입점 ─────</span>
+    <span class="k">public static</span> <span class="t">DataManager</span>     Data     { <span class="k">get</span> { <span class="k">return</span> Instance?._data; } }
+    <span class="k">public static</span> <span class="t">ResourceManager</span> Resource { <span class="k">get</span> { <span class="k">return</span> Instance?._resource; } }
+    <span class="k">public static</span> <span class="t">TurnManager</span>     Turn     { <span class="k">get</span> { <span class="k">return</span> Instance?._turn; } }
+    <span class="k">public static</span> <span class="t">MapManager</span>      Map      { <span class="k">get</span> { <span class="k">return</span> Instance?._map; } }
+    <span class="k">public static</span> <span class="t">CutSceneManager</span> CutScene { <span class="k">get</span> { <span class="k">return</span> Instance?._cutscene; } }
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 전역 서비스를 단일 진입점으로 통일하고 Core/Contents 계층을 분리해, 시스템이 늘어나도 의존 관계가 한 방향으로 유지되도록 했습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">UI_Base.cs — enum 자동 바인딩</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// 인스펙터 드래그 없이, enum 이름으로 자식 오브젝트를 자동 탐색·바인딩</span>
+<span class="k">protected void</span> Bind&lt;<span class="t">T</span>&gt;(<span class="t">Type</span> type) <span class="k">where</span> <span class="t">T</span> : <span class="t">Object</span>
+{
+    <span class="k">string</span>[] names = <span class="t">Enum</span>.GetNames(type);
+    <span class="t">Object</span>[] objects = <span class="k">new</span> <span class="t">Object</span>[names.Length];
+    _objects.Add(<span class="k">typeof</span>(<span class="t">T</span>), objects);
+
+    <span class="k">for</span> (<span class="k">int</span> i = 0; i &lt; names.Length; i++)
+    {
+        objects[i] = (<span class="k">typeof</span>(<span class="t">T</span>) == <span class="k">typeof</span>(<span class="t">GameObject</span>))
+            ? <span class="t">Util</span>.FindChild(gameObject, names[i], <span class="k">true</span>)
+            : <span class="t">Util</span>.FindChild&lt;<span class="t">T</span>&gt;(gameObject, names[i], <span class="k">true</span>);
+        <span class="k">if</span> (objects[i] == <span class="k">null</span>) <span class="t">Debug</span>.Log($<span class="s">"Failed to bind({names[i]})"</span>);
+    }
+}
+
+<span class="k">protected void</span> BindButtons(<span class="t">Type</span> type) { Bind&lt;<span class="t">Button</span>&gt;(type); }
+<span class="k">protected</span> <span class="t">T</span> Get&lt;<span class="t">T</span>&gt;(<span class="k">int</span> idx) <span class="k">where</span> <span class="t">T</span> : <span class="t">Object</span> =&gt; _objects[<span class="k">typeof</span>(<span class="t">T</span>)][idx] <span class="k">as</span> <span class="t">T</span>;</code></pre>
+      <p class="code-note"><b>포인트</b> — enum 한 벌만 선언하면 같은 이름의 자식 컴포넌트가 자동 연결됩니다. 인스펙터 수동 연결을 제거해 휴먼 에러와 프리팹 구조 변경에 강한 UI 프레임워크를 만들었습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">UI_Base.cs — UI 이벤트 바인딩</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// 게임오브젝트에 UI 이벤트(클릭/드래그/호버 등)를 핸들러로 위임</span>
+<span class="k">public static void</span> BindEvent(<span class="t">GameObject</span> go, <span class="t">Action</span>&lt;<span class="t">PointerEventData</span>&gt; action = <span class="k">null</span>, <span class="t">EUIEvent</span> type = <span class="t">EUIEvent</span>.Click)
+{
+    <span class="t">UI_EventHandler</span> evt = <span class="t">Util</span>.GetOrAddComponent&lt;<span class="t">UI_EventHandler</span>&gt;(go);
+    <span class="k">switch</span> (type)
+    {
+        <span class="k">case</span> <span class="t">EUIEvent</span>.Click:
+            evt.OnClickHandler -= action;   <span class="c">// 중복 구독 방지 (-= 후 +=)</span>
+            evt.OnClickHandler += action;
+            <span class="k">break</span>;
+        <span class="k">case</span> <span class="t">EUIEvent</span>.Drag:
+            evt.OnDragHandler -= action;
+            evt.OnDragHandler += action;
+            <span class="k">break</span>;
+        <span class="c">// PointerEnter / PointerExit / PointerDown / PointerUp …</span>
+    }
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — enum 바인딩으로 참조를 연결한 뒤 <code>BindEvent</code>로 클릭·드래그·호버 등 입력을 핸들러에 위임. <code>-=</code> 후 <code>+=</code>로 중복 구독을 방지합니다.</p>
+    </details>
+  </article>
+
+  <!-- ========== 3. 데이터 기반 인프라 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">🧩</span>
+      <div>
+        <span class="role-tag">설계 · 구현 · 툴</span>
+        <h3>Data-Driven 기반 설계 (Excel → JSON 파이프라인)</h3>
+        <div class="sys-items">DataTransformer.cs · DataManager.cs · CutScene 데이터 시트</div>
+      </div>
+    </div>
+    <p class="sys-desc">기획자가 작성한 <b>Excel 시트</b>를 게임이 바로 쓰는 데이터로 바꾸는 파이프라인을 구축했습니다. 전투·스킬·컷신 등 20여 종 데이터가 모두 이 흐름을 탑니다.</p>
+    <ul class="sys-list">
+      <li><b>에디터 단축키 한 번</b>(<code>Ctrl+Shift+K</code>)으로 모든 Excel 시트를 JSON으로 일괄 변환</li>
+      <li>제네릭 + 리플렉션 기반 변환 — 신규 데이터는 <b>등록 한 줄</b>이면 동일 파이프라인 적용</li>
+      <li><code>ILoader&lt;K,V&gt;</code> 인터페이스로 JSON → ID 기반 <b>O(1) 조회 딕셔너리</b> 구성</li>
+      <li>컷신 데이터 시트(대사·분기·연출 설정)도 같은 파이프라인으로 통합 관리</li>
+    </ul>
+    <div class="tags"><span class="tag">Generic + Reflection</span><span class="tag">JSON Serialize</span><span class="tag">Editor Tool</span><span class="tag">Data-Driven</span></div>
+
+    <div class="seq-diagram">
+      <div class="dgm-title">Data Pipeline <span class="dim">· Excel → JSON Serialization Sequence</span></div>
+      <svg viewBox="0 0 760 442" role="img" aria-label="데이터 파이프라인 시퀀스 다이어그램">
+        <defs>
+          <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5ea2ff"/></marker>
+          <marker id="ahg" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#6b7794"/></marker>
+          <marker id="aha" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff8a63"/></marker>
+        </defs>
+
+        <!-- Lifelines -->
+        <g stroke="#25304a" stroke-dasharray="3 5">
+          <line x1="80"  y1="58" x2="80"  y2="404"/>
+          <line x1="230" y1="58" x2="230" y2="404"/>
+          <line x1="380" y1="58" x2="380" y2="404"/>
+          <line x1="530" y1="58" x2="530" y2="404"/>
+          <line x1="680" y1="58" x2="680" y2="404"/>
+        </g>
+
+        <!-- Participant boxes -->
+        <g>
+          <rect x="24"  y="22" width="112" height="34" rx="7" fill="#182032" stroke="#25304a"/>
+          <rect x="174" y="22" width="112" height="34" rx="7" fill="#182032" stroke="#25304a"/>
+          <rect x="324" y="22" width="112" height="34" rx="7" fill="#182032" stroke="#25304a"/>
+          <rect x="474" y="22" width="112" height="34" rx="7" fill="#182032" stroke="#25304a"/>
+          <rect x="624" y="22" width="112" height="34" rx="7" fill="#182032" stroke="#25304a"/>
+        </g>
+        <g fill="#e6ebf5" font-size="12" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">
+          <text x="80"  y="43">기획자 · Excel</text>
+          <text x="230" y="43">DataTransformer</text>
+          <text x="380" y="43">JSON @Resources</text>
+          <text x="530" y="43">DataManager</text>
+          <text x="680" y="43">게임 런타임</text>
+        </g>
+
+        <!-- Messages (edit time) -->
+        <g font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">
+          <line x1="80" y1="88" x2="228" y2="88" stroke="#5ea2ff" marker-end="url(#ah)"/>
+          <text x="154" y="82" fill="#9aa7c2">① Excel 작성 → 단축키</text>
+
+          <path d="M230,112 L266,112 L266,128 L232,128" fill="none" stroke="#ff8a63" marker-end="url(#aha)"/>
+          <text x="275" y="124" fill="#9aa7c2" text-anchor="start">② 리플렉션 파싱</text>
+
+          <line x1="230" y1="160" x2="378" y2="160" stroke="#5ea2ff" marker-end="url(#ah)"/>
+          <text x="304" y="154" fill="#9aa7c2">③ JSON 직렬화·저장</text>
+        </g>
+
+        <!-- Divider -->
+        <line x1="30" y1="190" x2="730" y2="190" stroke="#3a4a6e" stroke-dasharray="2 4"/>
+        <rect x="298" y="180" width="164" height="20" rx="10" fill="#141926" stroke="#25304a"/>
+        <text x="380" y="194" fill="#ffb13d" font-size="10.5" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">에디터 타임 ▲   런타임 ▼</text>
+
+        <!-- Messages (runtime) -->
+        <g font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">
+          <line x1="530" y1="228" x2="382" y2="228" stroke="#5ea2ff" marker-end="url(#ah)"/>
+          <text x="456" y="222" fill="#9aa7c2">④ TextAsset 로드</text>
+
+          <path d="M530,252 L566,252 L566,268 L532,268" fill="none" stroke="#ff8a63" marker-end="url(#aha)"/>
+          <text x="575" y="264" fill="#9aa7c2" text-anchor="start">⑤ JsonConvert → Dict</text>
+
+          <line x1="680" y1="314" x2="532" y2="314" stroke="#5ea2ff" marker-end="url(#ah)"/>
+          <text x="606" y="308" fill="#9aa7c2">⑥ Dic[id] 조회</text>
+
+          <line x1="530" y1="348" x2="678" y2="348" stroke="#6b7794" stroke-dasharray="4 4" marker-end="url(#ahg)"/>
+          <text x="606" y="342" fill="#9aa7c2">⑦ 데이터 O(1) 반환</text>
+        </g>
+
+        <text x="380" y="428" fill="#6b7794" font-size="10.5" text-anchor="middle" font-family="system-ui, sans-serif">기획자 Excel → 에디터 파싱 → JSON → 런타임 딕셔너리(ID 기반 O(1) 조회)</text>
+      </svg>
+
+      <div class="dgm-legend">
+        <span><span class="ln"></span>호출 / 저장</span>
+        <span><span class="ln dash"></span>데이터 반환</span>
+        <span><i style="background:#ff8a63"></i>self · 내부 처리</span>
+        <span><i style="background:#ffb13d"></i>에디터/런타임 경계</span>
+      </div>
+      <div class="dgm-tag">Volcain · Data Pipeline</div>
+    </div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">DataTransformer.cs — Excel → JSON</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// 단축키(Ctrl+Shift+K) 한 번으로 20여 종 데이터 시트를 일괄 변환</span>
+[<span class="t">MenuItem</span>(<span class="s">"Tools/ParseExcel %#K"</span>)]
+<span class="k">public static void</span> ParseExcelDataToJson()
+{
+    ParseExcelDataToJson&lt;<span class="t">MonsterDataLoader</span>,  <span class="t">MonsterData</span>&gt;(<span class="s">"Monster"</span>);
+    ParseExcelDataToJson&lt;<span class="t">SkillDataLoader</span>,    <span class="t">SkillData</span>&gt;(<span class="s">"Skill"</span>);
+    ParseExcelDataToJson&lt;<span class="t">CutSceneDataLoader</span>, <span class="t">CutSceneData</span>&gt;(<span class="s">"CutScene"</span>);
+    <span class="c">// … 신규 데이터 종류는 한 줄만 등록하면 동일 파이프라인으로 처리</span>
+}
+
+<span class="k">private static void</span> ParseExcelDataToJson&lt;<span class="t">Loader</span>, <span class="t">LoaderData</span>&gt;(<span class="k">string</span> filename)
+    <span class="k">where</span> <span class="t">Loader</span> : <span class="k">new</span>() <span class="k">where</span> <span class="t">LoaderData</span> : <span class="k">new</span>()
+{
+    <span class="t">Loader</span> loader = <span class="k">new</span> <span class="t">Loader</span>();
+    <span class="t">FieldInfo</span> field = loader.GetType().GetFields()[0];     <span class="c">// 리플렉션으로 리스트 필드 주입</span>
+    field.SetValue(loader, ParseExcelDataToList&lt;<span class="t">LoaderData</span>&gt;(filename));
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 제네릭 + 리플렉션으로 데이터 종류가 늘어나도 등록 한 줄로 확장되는 파이프라인. 기획자가 작성한 Excel을 에디터 단축키로 바로 JSON화합니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">DataManager.cs — ILoader 런타임 로드</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="k">public interface</span> <span class="t">ILoader</span>&lt;<span class="t">Key</span>, <span class="t">Value</span>&gt;
+{
+    <span class="t">Dictionary</span>&lt;<span class="t">Key</span>, <span class="t">Value</span>&gt; MakeDict();
+}
+
+<span class="c">// JSON → Loader 역직렬화 → Dictionary 변환을 제네릭 한 줄로 통일</span>
+<span class="k">public</span> <span class="t">Loader</span> LoadJson&lt;<span class="t">Loader</span>, <span class="t">Key</span>, <span class="t">Value</span>&gt;(<span class="k">string</span> path) <span class="k">where</span> <span class="t">Loader</span> : <span class="t">ILoader</span>&lt;<span class="t">Key</span>, <span class="t">Value</span>&gt;
+{
+    <span class="t">TextAsset</span> textAsset = Managers.Resource.Load&lt;<span class="t">TextAsset</span>&gt;(path);
+    <span class="k">return</span> <span class="t">JsonConvert</span>.DeserializeObject&lt;<span class="t">Loader</span>&gt;(textAsset.text);
+}
+
+<span class="k">public void</span> Init()
+{
+    MonsterDic  = LoadJson&lt;<span class="t">MonsterDataLoader</span>,  <span class="k">int</span>, <span class="t">MonsterData</span>&gt;(<span class="s">"MonsterData"</span>).MakeDict();
+    SkillDic    = LoadJson&lt;<span class="t">SkillDataLoader</span>,    <span class="k">int</span>, <span class="t">SkillData</span>&gt;(<span class="s">"SkillData"</span>).MakeDict();
+    CutSceneDic = LoadJson&lt;<span class="t">CutSceneDataLoader</span>, <span class="k">int</span>, <span class="t">CutSceneData</span>&gt;(<span class="s">"CutSceneData"</span>).MakeDict();
+    <span class="c">// … 20여 종 데이터를 ID 기반 O(1) 조회 딕셔너리로 구성</span>
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — <code>ILoader</code> 제네릭 인터페이스로 모든 데이터를 동일 패턴으로 로드하고, ID 기반 O(1) 딕셔너리로 메모리에 적재합니다. 컷신 데이터 시트(C6)도 같은 흐름을 그대로 사용합니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">DataTransformer.cs — CSV 리플렉션 매핑</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// CSV 한 줄 = 데이터 1건. 리플렉션으로 필드 타입에 맞춰 자동 매핑</span>
+<span class="k">private static</span> <span class="t">List</span>&lt;<span class="t">LoaderData</span>&gt; ParseExcelDataToList&lt;<span class="t">LoaderData</span>&gt;(<span class="k">string</span> filename) <span class="k">where</span> <span class="t">LoaderData</span> : <span class="k">new</span>()
+{
+    <span class="k">var</span> loaderDatas = <span class="k">new</span> <span class="t">List</span>&lt;<span class="t">LoaderData</span>&gt;();
+    <span class="k">string</span>[] lines = <span class="t">File</span>.ReadAllText($<span class="s">"…/ExcelData/{filename}Data.csv"</span>).Split(<span class="s">"\n"</span>);
+
+    <span class="k">for</span> (<span class="k">int</span> l = 1; l &lt; lines.Length; l++)   <span class="c">// 0번 줄(헤더) 제외</span>
+    {
+        <span class="t">List</span>&lt;<span class="k">string</span>&gt; row = ParseCsvLine(lines[l].Replace(<span class="s">"\r"</span>, <span class="s">""</span>));
+        <span class="k">if</span> (row.Count == 0 || <span class="k">string</span>.IsNullOrEmpty(row[0])) <span class="k">continue</span>;
+
+        <span class="t">LoaderData</span> data = <span class="k">new</span> <span class="t">LoaderData</span>();
+        <span class="k">var</span> fields = GetFieldsInBase(<span class="k">typeof</span>(<span class="t">LoaderData</span>));
+        <span class="k">for</span> (<span class="k">int</span> f = 0; f &lt; fields.Count; f++)
+        {
+            <span class="t">FieldInfo</span> field = data.GetType().GetField(fields[f].Name);
+            <span class="k">object</span> value = field.FieldType.IsGenericType        <span class="c">// List&lt;T&gt; 컬럼이면</span>
+                ? ConvertList(row[f], field.FieldType)            <span class="c">//   → 리스트 변환</span>
+                : ConvertValue(row[f], field.FieldType);          <span class="c">//   → 단일 값 변환</span>
+            field.SetValue(data, value);
+        }
+        loaderDatas.Add(data);
+    }
+    <span class="k">return</span> loaderDatas;
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — CSV 각 컬럼을 데이터 클래스 필드 타입(단일/List)에 맞춰 리플렉션으로 자동 매핑. 컷신·스킬 등 새 시트도 <b>데이터 클래스만 선언</b>하면 별도 파서 없이 처리됩니다.</p>
+    </details>
+  </article>
+
+  <!-- ========== 4. 턴제 전투 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">⚔️</span>
+      <div>
+        <span class="role-tag">설계 · 구현</span>
+        <h3>턴제 전투 시스템</h3>
+        <div class="sys-items">TurnManager.cs · Senario.cs · SkillBase.cs · EffectComponent.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">SRPG의 심장인 턴 진행 로직을 직접 설계했습니다. 아군·적·추가 턴·광폭화 등 여러 페이즈를 하나의 상태 흐름으로 관리합니다.</p>
+    <ul class="sys-list">
+      <li><b>큐 기반 TurnManager</b> — 턴 순서·페이즈 전환·종료 처리 (A1)</li>
+      <li><b>Wave 시스템</b> — 클리어 감지 후 다음 웨이브/스테이지 로드 흐름 (A2)</li>
+      <li><b>몬스터 AI</b> — 아군 위치 기준 최적 시나리오(타겟·이동·스킬) 계산 (A4)</li>
+      <li><b>스킬 시스템</b> — SkillBase 추상화, 범위 ShapeParser, 쿨타임/지속시간 관리 (A6)</li>
+      <li><b>버프 / CC(상태이상)</b> 효과의 턴 단위 duration 처리 (A7)</li>
+    </ul>
+    <div class="tags"><span class="tag">Queue Turn</span><span class="tag">State Phase</span><span class="tag">UniTask 비동기</span><span class="tag">AI</span><span class="tag">Skill / Buff</span></div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">TurnManager.cs — 비동기 턴 전환</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="k">public async void</span> PlayerTurnTransition()
+{
+    <span class="k">await</span> UniTask.WaitUntil(() =&gt; !Managers.Game.IsPerforming);        <span class="c">// 연출 중이면 대기</span>
+    <span class="k">await</span> UniTask.WaitUntil(() =&gt;
+        activePlayerList.All(p =&gt; p.CameraReady &amp;&amp; !p.UsingSkill));      <span class="c">// 스킬 연출 중이면 대기</span>
+
+    <span class="k">switch</span> (CurrentPhase)
+    {
+        <span class="k">case</span> TurnPhase.PlayerControl:
+            <span class="k">if</span> (extraTurnPlayer.Count &gt; 0)                  StartExtraTurn();
+            <span class="k">else if</span> (Managers.Map.StageComponent.HasNextStage) SetEnemyTurnStart();
+            <span class="k">break</span>;
+        <span class="k">case</span> TurnPhase.PlayerExtra:
+            SetEnemyTurnStart();
+            <span class="k">break</span>;
+    }
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 연출·스킬 재생이 끝날 때까지 <code>UniTask</code>로 비동기 대기한 뒤 턴 페이즈를 전환. 연출과 턴 로직이 동시에 진행되며 생기던 경합(race) 문제를 제거했습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">Senario.cs · Creature.cs — 몬스터 AI 점수 시스템 (A4)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">/// AI 의사결정의 핵심 — 이동·타겟·스킬·유불리를 하나의 점수로 환산</span>
+<span class="k">public class</span> <span class="t">Senario</span>
+{
+    <span class="k">public float</span> senarioValue;          <span class="c">// 종합 점수</span>
+    <span class="k">public</span> <span class="t">SkillComponent</span> targetSkill;  <span class="c">// 사용할 스킬</span>
+    <span class="k">public</span> <span class="t">OverlayTile</span>  targetTile;     <span class="c">// 공격 목표</span>
+    <span class="k">public</span> <span class="t">OverlayTile</span>  positionTile;   <span class="c">// 이동할 위치</span>
+    <span class="k">public</span> <span class="t">Creature</span>     targetCharacter;
+}
+
+<span class="c">// 이동 가능한 모든 타일에 [이득·위험·전략·피격수] 4축 점수를 매겨 최적 행동 선택</span>
+<span class="k">public void</span> CalculateBestSenario()
+{
+    Managers.Map.GetTilesInRange(currentStandingTile.gridLocation, ActualMovementRange, MovementRangeTiles);
+
+    <span class="c">// _tileDataBuffer[tile] = { Benefit, Risk, Strategy, AttackablePlayerCount }</span>
+    <span class="k">if</span> (CurrentCCState == <span class="t">ECrowdConrolState</span>.None)
+    {
+        CalculateMonsterAttackTileScores(formation == <span class="t">EFormation</span>.Kiting); <span class="c">// 이득(공격)</span>
+        CalculatePlayerAttackRiskScores();                                 <span class="c">// 위험(피격)</span>
+        <span class="c">// 고저차·카이팅 거리 등 전략 점수 가산 …</span>
+    }
+    ApplyBestSenario();   <span class="c">// 최고 점수의 타일·스킬을 실제 행동으로 확정</span>
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 몬스터 성향(Aggro·Preservation·Formation)과 지형(고저차)을 가중치로 환산해, 이동 가능 타일마다 4축 점수를 매기고 최댓값을 행동으로 선택하는 <b>효용 기반(utility) AI</b>입니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">SkillBase.cs — 스킬 추상화 (A6)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+
+      <div class="uml-diagram">
+        <div class="dgm-title">Gameplay <span class="dim">· Skill Class Hierarchy</span></div>
+        <svg viewBox="0 0 760 432" role="img" aria-label="SkillBase 스킬 클래스 계층 다이어그램">
+          <defs>
+            <marker id="sk-inh" markerWidth="16" markerHeight="14" refX="13" refY="6" orient="auto">
+              <path d="M1,1 L14,6 L1,11 Z" fill="#0a0d14" stroke="#8c99b5" stroke-width="1.2"/>
+            </marker>
+            <marker id="sk-real" markerWidth="14" markerHeight="12" refX="10" refY="5" orient="auto">
+              <path d="M1,1 L11,5 L1,9" fill="none" stroke="#4fd6a0" stroke-width="1.3"/>
+            </marker>
+          </defs>
+
+          <!-- ===== 연결선 (상속 / 구현) ===== -->
+          <g fill="none" stroke="#3a4a6e" stroke-width="1.3">
+            <path d="M127,168 V148 H633 V168"/>
+            <path d="M380,168 V148"/>
+            <path d="M380,148 V124" marker-end="url(#sk-inh)"/>
+            <path d="M127,316 V284" marker-end="url(#sk-inh)"/>
+            <path d="M355,318 L378,262" marker-end="url(#sk-inh)"/>
+          </g>
+          <path d="M443,362 H468" fill="none" stroke="#4fd6a0" stroke-width="1.3" stroke-dasharray="5 4" marker-end="url(#sk-real)"/>
+
+          <!-- ===== SkillBase (root, abstract) ===== -->
+          <rect x="282" y="18" width="196" height="104" rx="7" fill="#141a28" stroke="#ff8a63" stroke-width="1.5"/>
+          <path d="M283.5,24 a6,6 0 0 1 6,-6 h182 a6,6 0 0 1 6,6 v29 h-194 z" fill="rgba(255,138,99,.15)"/>
+          <line x1="282" y1="53" x2="478" y2="53" stroke="#ff8a63" stroke-opacity=".5"/>
+          <text x="380" y="33" text-anchor="middle" font-size="9" fill="#ffb13d" font-family="ui-monospace,Consolas,monospace">«abstract» : InitBase</text>
+          <text x="380" y="48" text-anchor="middle" font-size="13" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">SkillBase</text>
+          <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5">
+            <text x="292" y="71"><tspan fill="#4fd6a0">+</tspan> Owner : <tspan fill="#5ea2ff">Creature</tspan></text>
+            <text x="292" y="86"><tspan fill="#4fd6a0">+</tspan> RemainCoolTime : <tspan fill="#5ea2ff">int</tspan></text>
+            <text x="292" y="101"><tspan fill="#4fd6a0">+</tspan> SkillData : <tspan fill="#5ea2ff">SkillData</tspan></text>
+            <text x="292" y="116"><tspan fill="#4fd6a0">+</tspan> RemainDuration : <tspan fill="#5ea2ff">int</tspan></text>
+          </g>
+
+          <!-- ===== TargetSkill (abstract) ===== -->
+          <rect x="14" y="168" width="226" height="116" rx="7" fill="#141a28" stroke="#3fc8c0" stroke-width="1.5"/>
+          <path d="M15.5,174 a6,6 0 0 1 6,-6 h212 a6,6 0 0 1 6,6 v29 h-224 z" fill="rgba(63,200,192,.13)"/>
+          <line x1="14" y1="203" x2="240" y2="203" stroke="#3fc8c0" stroke-opacity=".5"/>
+          <text x="127" y="183" text-anchor="middle" font-size="9" fill="#3fc8c0" font-family="ui-monospace,Consolas,monospace">«abstract»</text>
+          <text x="127" y="198" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">TargetSkill</text>
+          <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5">
+            <text x="24" y="223"><tspan fill="#4fd6a0">+</tspan> ObjectTarget : <tspan fill="#5ea2ff">BaseObject</tspan></text>
+            <text x="24" y="238"><tspan fill="#4fd6a0">+</tspan> TileTarget : <tspan fill="#5ea2ff">OverlayTile</tspan></text>
+            <text x="24" y="253"><tspan fill="#4fd6a0">+</tspan> ObjectTargets : <tspan fill="#5ea2ff">List&lt;BaseObject&gt;</tspan></text>
+            <text x="24" y="268"><tspan fill="#4fd6a0">+</tspan> SkillShape : <tspan fill="#5ea2ff">TextAsset</tspan></text>
+          </g>
+
+          <!-- ===== PassiveSkill (abstract) ===== -->
+          <rect x="267" y="168" width="226" height="92" rx="7" fill="#141a28" stroke="#4fd6a0" stroke-width="1.5"/>
+          <path d="M268.5,174 a6,6 0 0 1 6,-6 h212 a6,6 0 0 1 6,6 v29 h-224 z" fill="rgba(79,214,160,.13)"/>
+          <line x1="267" y1="203" x2="493" y2="203" stroke="#4fd6a0" stroke-opacity=".5"/>
+          <text x="380" y="183" text-anchor="middle" font-size="9" fill="#4fd6a0" font-family="ui-monospace,Consolas,monospace">«abstract»</text>
+          <text x="380" y="198" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">PassiveSkill</text>
+          <g font-size="9" font-family="ui-monospace,Consolas,monospace">
+            <text x="277" y="222" fill="#8c99b5">SetInfo() <tspan fill="#6b7794">→</tspan> PassiveSkills.Add(this)</text>
+            <text x="277" y="237" fill="#6b7794">// 첫 소환 시 자동 등록</text>
+            <text x="277" y="250" fill="#6b7794">// 등록 후 상시 발동</text>
+          </g>
+
+          <!-- ===== ToggleSkill (abstract) ===== -->
+          <rect x="520" y="168" width="226" height="84" rx="7" fill="#141a28" stroke="#ffb13d" stroke-width="1.5"/>
+          <path d="M521.5,174 a6,6 0 0 1 6,-6 h212 a6,6 0 0 1 6,6 v29 h-224 z" fill="rgba(255,177,61,.13)"/>
+          <line x1="520" y1="203" x2="746" y2="203" stroke="#ffb13d" stroke-opacity=".5"/>
+          <text x="633" y="183" text-anchor="middle" font-size="9" fill="#ffb13d" font-family="ui-monospace,Consolas,monospace">«abstract»</text>
+          <text x="633" y="198" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">ToggleSkill</text>
+          <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5">
+            <text x="530" y="223"><tspan fill="#4fd6a0">+</tspan> DoToggleSkill() : <tspan fill="#5ea2ff">void</tspan></text>
+            <text x="530" y="238"><tspan fill="#4fd6a0">+</tspan> OffToggleSkill() : <tspan fill="#5ea2ff">void</tspan></text>
+          </g>
+
+          <!-- ===== UltSkillBase (abstract : TargetSkill) ===== -->
+          <rect x="14" y="318" width="226" height="98" rx="7" fill="#141a28" stroke="#b88bff" stroke-width="1.5"/>
+          <path d="M15.5,324 a6,6 0 0 1 6,-6 h212 a6,6 0 0 1 6,6 v29 h-224 z" fill="rgba(184,139,255,.13)"/>
+          <line x1="14" y1="353" x2="240" y2="353" stroke="#b88bff" stroke-opacity=".5"/>
+          <text x="127" y="333" text-anchor="middle" font-size="9" fill="#b88bff" font-family="ui-monospace,Consolas,monospace">«abstract» : TargetSkill</text>
+          <text x="127" y="348" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">UltSkillBase</text>
+          <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5">
+            <text x="24" y="373"><tspan fill="#4fd6a0">+</tspan> UltSkillData : <tspan fill="#5ea2ff">UltSkillData</tspan></text>
+            <text x="24" y="389"><tspan fill="#4fd6a0">+</tspan> RemainingUses : <tspan fill="#5ea2ff">int</tspan></text>
+            <text x="24" y="405"><tspan fill="#4fd6a0">+</tspan> RequiredLoyaltyValue : <tspan fill="#5ea2ff">int</tspan></text>
+          </g>
+
+          <!-- ===== SoraPassive (concrete : PassiveSkill) ===== -->
+          <rect x="267" y="320" width="176" height="84" rx="7" fill="#141a28" stroke="#4fd6a0" stroke-width="1.3"/>
+          <line x1="267" y1="357" x2="443" y2="357" stroke="#4fd6a0" stroke-opacity=".35"/>
+          <text x="355" y="336" text-anchor="middle" font-size="8.5" fill="#4fd6a0" font-family="ui-monospace,Consolas,monospace">«concrete» : PassiveSkill</text>
+          <text x="355" y="351" text-anchor="middle" font-size="12" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">SoraPassive</text>
+          <g font-size="9" font-family="ui-monospace,Consolas,monospace" fill="#6b7794">
+            <text x="277" y="376">// 데미지 증가 패시브</text>
+            <text x="277" y="391">// IPassiveDamageModifier 구현</text>
+          </g>
+
+          <!-- ===== IPassiveDamageModifier (interface) ===== -->
+          <rect x="468" y="326" width="278" height="72" rx="7" fill="#0f1722" stroke="#4fd6a0" stroke-width="1.3" stroke-dasharray="5 4"/>
+          <line x1="468" y1="363" x2="746" y2="363" stroke="#4fd6a0" stroke-opacity=".35"/>
+          <text x="607" y="343" text-anchor="middle" font-size="9" fill="#4fd6a0" font-family="ui-monospace,Consolas,monospace">«interface»</text>
+          <text x="607" y="358" text-anchor="middle" font-size="12" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">IPassiveDamageModifier</text>
+          <text x="478" y="384" font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5"><tspan fill="#4fd6a0">+</tspan> GetDamageMultiplier(<tspan fill="#5ea2ff">Creature</tspan> defender) : <tspan fill="#5ea2ff">float</tspan></text>
+        </svg>
+
+        <div class="dgm-legend">
+          <span><i style="background:#ff8a63"></i>SkillBase</span>
+          <span><i style="background:#3fc8c0"></i>TargetSkill</span>
+          <span><i style="background:#4fd6a0"></i>PassiveSkill</span>
+          <span><i style="background:#ffb13d"></i>ToggleSkill</span>
+          <span><i style="background:#b88bff"></i>UltSkillBase</span>
+          <span><span class="ln" style="border-color:#8c99b5"></span>상속</span>
+          <span><span class="ln dash" style="border-color:#4fd6a0"></span>구현 (선택적)</span>
+        </div>
+        <div class="dgm-tag">Volcain · Skill Hierarchy</div>
+      </div>
+
+      <pre><code><span class="c">// 모든 스킬의 조상 — 공통 흐름은 베이스에 고정, 세부 효과는 파생 클래스가 override</span>
+<span class="k">public abstract class</span> <span class="t">SkillBase</span> : <span class="t">InitBase</span>
+{
+    <span class="k">public</span> <span class="t">Creature</span> Owner { <span class="k">get</span>; <span class="k">protected set</span>; }
+    <span class="k">public</span> <span class="t">Data</span>.<span class="t">SkillData</span> SkillData { <span class="k">get</span>; <span class="k">protected set</span>; }   <span class="c">// 스킬 데이터 시트</span>
+    <span class="k">public int</span> RemainCoolTime { <span class="k">get</span>; <span class="k">set</span>; }
+    <span class="k">public int</span> RemainDuration { <span class="k">get</span>; <span class="k">set</span>; }
+
+    <span class="k">public virtual void</span> SetInfo(<span class="t">Creature</span> owner, <span class="k">int</span> skillTemplateID)
+    {
+        Owner = owner;
+        SkillData = Managers.Data.SkillDic[skillTemplateID];   <span class="c">// ID로 데이터 주입</span>
+    }
+
+    <span class="k">public virtual void</span> BeginSkill() { }   <span class="c">// 시전 전 사전 정리   (override)</span>
+    <span class="k">public virtual void</span> DoSkill()    { }   <span class="c">// 실제 스킬 효과     (override)</span>
+    <span class="k">public void</span> CountdownCooldown() =&gt; RemainCoolTime = SkillData.CoolTime;
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 공통 로직(데이터 주입·쿨타임)을 베이스에 고정하고 개별 스킬은 <code>BeginSkill</code>/<code>DoSkill</code>만 override하는 <b>템플릿 메서드</b> 구조. 스킬 추가 시 데이터 시트 + 파생 클래스만 작성하면 됩니다.</p>
+
+      <div class="seq-diagram">
+        <div class="dgm-title">Skill System <span class="dim">· Execution Sequence</span></div>
+        <svg viewBox="0 0 760 436" role="img" aria-label="스킬 실행 시퀀스 다이어그램">
+          <defs>
+            <marker id="sq-a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff8a63"/></marker>
+            <marker id="sq-t" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3fc8c0"/></marker>
+          </defs>
+
+          <!-- Lifelines -->
+          <g stroke="#25304a" stroke-dasharray="3 5">
+            <line x1="110" y1="60" x2="110" y2="410"/>
+            <line x1="325" y1="60" x2="325" y2="410"/>
+            <line x1="525" y1="60" x2="525" y2="410"/>
+            <line x1="680" y1="60" x2="680" y2="410"/>
+          </g>
+
+          <!-- Activation bar (TargetSkill) -->
+          <rect x="321" y="96" width="8" height="306" rx="2" fill="rgba(63,200,192,.10)" stroke="rgba(63,200,192,.30)"/>
+
+          <!-- Participant boxes -->
+          <g>
+            <rect x="45"  y="16" width="130" height="42" rx="7" fill="#182032" stroke="#3fc8c0"/>
+            <rect x="263" y="16" width="124" height="42" rx="7" fill="#1d1810" stroke="#ff8a63"/>
+            <rect x="472" y="16" width="106" height="42" rx="7" fill="#1d1a0e" stroke="#ffb13d"/>
+            <rect x="628" y="16" width="104" height="42" rx="7" fill="#182032" stroke="#25304a"/>
+          </g>
+          <g text-anchor="middle" font-family="ui-monospace,Consolas,monospace">
+            <text x="110" y="31" font-size="8.5" fill="#6b7794">controller</text>
+            <text x="325" y="31" font-size="8.5" fill="#6b7794">skill</text>
+            <text x="525" y="31" font-size="8.5" fill="#6b7794">target</text>
+            <text x="680" y="31" font-size="8.5" fill="#6b7794">player state</text>
+          </g>
+          <g text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" fill="#e6ebf5">
+            <text x="110" y="48" font-size="11.5">PlayerMouseCtrl</text>
+            <text x="325" y="48" font-size="11.5">TargetSkill</text>
+            <text x="525" y="48" font-size="11.5">BaseObject</text>
+            <text x="680" y="48" font-size="11.5">Loyalty</text>
+          </g>
+
+          <!-- ===== ⓐ 타게팅 단계 ===== -->
+          <rect x="10" y="73" width="118" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="69" y="86" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓐ 타게팅 단계</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="110" y1="106" x2="323" y2="106" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="217" y="101" text-anchor="middle" font-size="9.5" fill="#9aa7c2">SetTargetCreature() / SetTargetTile()</text>
+
+            <path d="M325,123 h40 v10 h-38" fill="none" stroke="#3fc8c0" marker-end="url(#sq-t)"/>
+            <text x="372" y="122" font-size="9.5" fill="#3fc8c0">SpawnTargetingLine()</text>
+            <text x="372" y="134" font-size="8.5" fill="#6b7794">// 라인 렌더러 표시</text>
+
+            <line x1="325" y1="160" x2="523" y2="160" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="425" y="155" text-anchor="middle" font-size="9.5" fill="#9aa7c2">SetSkillBattleInfo() → AddBattleInfo()</text>
+            <text x="425" y="172" text-anchor="middle" font-size="8.5" fill="#6b7794">// 범위 내 타겟에 BattleInfo 생성 · 예상 데미지 표시</text>
+          </g>
+
+          <!-- ===== ⓑ 실행 단계 (DoSkill) ===== -->
+          <rect x="10" y="186" width="150" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="85" y="199" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓑ 실행 단계 (DoSkill)</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="110" y1="220" x2="323" y2="220" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="217" y="215" text-anchor="middle" font-size="9.5" fill="#9aa7c2">DoSkill()</text>
+
+            <path d="M325,235 h44 v10 h-42" fill="none" stroke="#3fc8c0" marker-end="url(#sq-t)"/>
+            <text x="376" y="234" font-size="9.5" fill="#3fc8c0">CanUseSkill() → checkSkillRange()</text>
+            <text x="376" y="246" font-size="8.5" fill="#6b7794">// Tile / Creature / Both 사거리 검사</text>
+
+            <path d="M325,269 h44 v10 h-42" fill="none" stroke="#3fc8c0" marker-end="url(#sq-t)"/>
+            <text x="376" y="268" font-size="9.5" fill="#3fc8c0">GetTargets() → SkillShape</text>
+            <text x="376" y="280" font-size="8.5" fill="#6b7794">// 범위 내 캐릭터 수집</text>
+
+            <line x1="325" y1="304" x2="523" y2="304" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="425" y="299" text-anchor="middle" font-size="9.5" fill="#9aa7c2">OnDamaged()</text>
+            <text x="425" y="316" text-anchor="middle" font-size="8.5" fill="#6b7794">// 데미지 · 이펙트 적용</text>
+
+            <line x1="525" y1="340" x2="678" y2="340" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="601" y="335" text-anchor="middle" font-size="9.5" fill="#9aa7c2">GetDamageLoyalty()</text>
+            <text x="601" y="352" text-anchor="middle" font-size="8.5" fill="#6b7794">// 충성도 갱신</text>
+          </g>
+
+          <!-- ===== ⓒ 정리 단계 ===== -->
+          <rect x="10" y="368" width="118" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="69" y="381" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓒ 정리 단계</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="325" y1="401" x2="523" y2="401" stroke="#ff8a63" marker-end="url(#sq-a)"/>
+            <text x="425" y="396" text-anchor="middle" font-size="9.5" fill="#9aa7c2">DeleteSkillBattleInfo() → 정리</text>
+          </g>
+
+          <text x="380" y="428" text-anchor="middle" font-size="10" fill="#6b7794" font-family="system-ui,sans-serif">타게팅(BattleInfo 표시) → DoSkill(사거리·범위·데미지) → 정리</text>
+        </svg>
+
+        <div class="dgm-legend">
+          <span><span class="ln" style="border-color:#ff8a63"></span>호출 / 실행</span>
+          <span><span class="ln" style="border-color:#3fc8c0"></span>self · 내부 처리</span>
+          <span><i style="background:rgba(255,177,61,.5)"></i>단계 구분</span>
+        </div>
+        <div class="dgm-tag">Volcain · Skill Sequence</div>
+      </div>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">EffectBase.cs · EffectComponent.cs — 효과 시스템 (A7)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+
+      <div class="uml-diagram">
+        <div class="dgm-title">Gameplay <span class="dim">· Effect Class Hierarchy</span></div>
+        <svg viewBox="0 0 760 340" role="img" aria-label="EffectBase 효과 클래스 계층 다이어그램">
+          <defs>
+            <marker id="ef-inh" markerWidth="16" markerHeight="14" refX="13" refY="6" orient="auto">
+              <path d="M1,1 L14,6 L1,11 Z" fill="#0a0d14" stroke="#8c99b5" stroke-width="1.2"/>
+            </marker>
+          </defs>
+
+          <!-- ===== 연결선 (상속) ===== -->
+          <g fill="none" stroke="#3a4a6e" stroke-width="1.3">
+            <path d="M131,164 H611"/>
+            <path d="M131,164 V176"/>
+            <path d="M362,164 V176"/>
+            <path d="M611,164 V176"/>
+            <path d="M380,150 V164"/>
+            <path d="M380,164 V152" marker-end="url(#ef-inh)"/>
+          </g>
+
+          <!-- ===== EffectBase (root) ===== -->
+          <rect x="270" y="18" width="220" height="132" rx="7" fill="#141a28" stroke="#ff8a63" stroke-width="1.5"/>
+          <path d="M271.5,24 a6,6 0 0 1 6,-6 h206 a6,6 0 0 1 6,6 v29 h-218 z" fill="rgba(255,138,99,.15)"/>
+          <line x1="270" y1="53" x2="490" y2="53" stroke="#ff8a63" stroke-opacity=".5"/>
+          <line x1="270" y1="117" x2="490" y2="117" stroke="#25304a"/>
+          <text x="380" y="33" text-anchor="middle" font-size="9" fill="#ffb13d" font-family="ui-monospace,Consolas,monospace">: BaseObject</text>
+          <text x="380" y="48" text-anchor="middle" font-size="13" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">EffectBase</text>
+          <g font-size="9.5" font-family="ui-monospace,Consolas,monospace" fill="#8c99b5">
+            <text x="280" y="70"><tspan fill="#4fd6a0">+</tspan> Owner : <tspan fill="#5ea2ff">Creature</tspan></text>
+            <text x="280" y="85"><tspan fill="#4fd6a0">+</tspan> Skill : <tspan fill="#5ea2ff">SkillBase</tspan></text>
+            <text x="280" y="100"><tspan fill="#4fd6a0">+</tspan> EffectData : <tspan fill="#5ea2ff">EffectData</tspan></text>
+            <text x="280" y="115"><tspan fill="#4fd6a0">+</tspan> Duration : <tspan fill="#5ea2ff">int</tspan></text>
+            <text x="280" y="135" fill="#6b7794"><tspan fill="#4fd6a0">+</tspan> SetInfo() · ApplyEffect() · ClearEffect()</text>
+          </g>
+
+          <!-- ===== BuffBase (abstract) ===== -->
+          <rect x="14" y="176" width="234" height="146" rx="7" fill="#141a28" stroke="#3fc8c0" stroke-width="1.5"/>
+          <path d="M15.5,182 a6,6 0 0 1 6,-6 h220 a6,6 0 0 1 6,6 v28 h-232 z" fill="rgba(63,200,192,.13)"/>
+          <line x1="14" y1="210" x2="248" y2="210" stroke="#3fc8c0" stroke-opacity=".5"/>
+          <text x="131" y="191" text-anchor="middle" font-size="9" fill="#3fc8c0" font-family="ui-monospace,Consolas,monospace">«abstract»</text>
+          <text x="131" y="205" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">BuffBase</text>
+          <text x="131" y="224" text-anchor="middle" font-size="8.5" fill="#6b7794" font-family="ui-monospace,Consolas,monospace">스탯 버프 / 디버프</text>
+          <g font-family="ui-monospace,Consolas,monospace" font-size="9.5" fill="#9aa7c2">
+            <g><rect x="24" y="230" width="214" height="15" rx="3" fill="rgba(63,200,192,.08)"/><line x1="25" y1="230" x2="25" y2="245" stroke="#3fc8c0" stroke-width="2"/><text x="33" y="241">AttackBuff</text></g>
+            <g><rect x="24" y="248" width="214" height="15" rx="3" fill="rgba(63,200,192,.08)"/><line x1="25" y1="248" x2="25" y2="263" stroke="#3fc8c0" stroke-width="2"/><text x="33" y="259">IncreaseMovement</text></g>
+            <g><rect x="24" y="266" width="214" height="15" rx="3" fill="rgba(63,200,192,.08)"/><line x1="25" y1="266" x2="25" y2="281" stroke="#3fc8c0" stroke-width="2"/><text x="33" y="277">ReduceDamageRateBuff</text></g>
+            <g><rect x="24" y="284" width="214" height="15" rx="3" fill="rgba(63,200,192,.08)"/><line x1="25" y1="284" x2="25" y2="299" stroke="#3fc8c0" stroke-width="2"/><text x="33" y="295">CounterShield</text></g>
+            <g><rect x="24" y="302" width="214" height="15" rx="3" fill="rgba(63,200,192,.08)"/><line x1="25" y1="302" x2="25" y2="317" stroke="#3fc8c0" stroke-width="2"/><text x="33" y="313">CleanDebuff</text></g>
+          </g>
+
+          <!-- ===== CCBase (abstract) ===== -->
+          <rect x="264" y="176" width="196" height="92" rx="7" fill="#141a28" stroke="#ffb13d" stroke-width="1.5"/>
+          <path d="M265.5,182 a6,6 0 0 1 6,-6 h182 a6,6 0 0 1 6,6 v28 h-194 z" fill="rgba(255,177,61,.13)"/>
+          <line x1="264" y1="210" x2="460" y2="210" stroke="#ffb13d" stroke-opacity=".5"/>
+          <text x="362" y="191" text-anchor="middle" font-size="9" fill="#ffb13d" font-family="ui-monospace,Consolas,monospace">«abstract»</text>
+          <text x="362" y="205" text-anchor="middle" font-size="12.5" font-weight="800" fill="#e6ebf5" font-family="system-ui,sans-serif">CCBase</text>
+          <text x="362" y="224" text-anchor="middle" font-size="8.5" fill="#6b7794" font-family="ui-monospace,Consolas,monospace">군중 제어 (CC)</text>
+          <g font-family="ui-monospace,Consolas,monospace" font-size="9.5" fill="#9aa7c2">
+            <g><rect x="274" y="230" width="176" height="15" rx="3" fill="rgba(255,177,61,.08)"/><line x1="275" y1="230" x2="275" y2="245" stroke="#ffb13d" stroke-width="2"/><text x="283" y="241">Aggravation</text></g>
+          </g>
+
+          <!-- ===== EffectBase 직접 상속 ===== -->
+          <rect x="476" y="176" width="270" height="110" rx="7" fill="#141a28" stroke="#b88bff" stroke-width="1.5"/>
+          <path d="M477.5,182 a6,6 0 0 1 6,-6 h256 a6,6 0 0 1 6,6 v28 h-268 z" fill="rgba(184,139,255,.13)"/>
+          <line x1="476" y1="210" x2="746" y2="210" stroke="#b88bff" stroke-opacity=".5"/>
+          <text x="611" y="192" text-anchor="middle" font-size="9" fill="#b88bff" font-family="ui-monospace,Consolas,monospace">EffectBase 직접 상속</text>
+          <text x="611" y="205" text-anchor="middle" font-size="8.5" fill="#6b7794" font-family="ui-monospace,Consolas,monospace">개별 효과</text>
+          <g font-family="ui-monospace,Consolas,monospace" font-size="9.5" fill="#9aa7c2">
+            <g><rect x="486" y="226" width="250" height="22" rx="3" fill="rgba(184,139,255,.08)"/><line x1="487" y1="226" x2="487" y2="248" stroke="#b88bff" stroke-width="2"/><text x="495" y="240">DotBase <tspan fill="#6b7794">— 턴당 지속 피해</tspan></text></g>
+            <g><rect x="486" y="252" width="250" height="22" rx="3" fill="rgba(184,139,255,.08)"/><line x1="487" y1="252" x2="487" y2="274" stroke="#b88bff" stroke-width="2"/><text x="495" y="266">StatusDisplayEffect <tspan fill="#6b7794">— 상태 아이콘</tspan></text></g>
+          </g>
+        </svg>
+
+        <div class="dgm-legend">
+          <span><i style="background:#ff8a63"></i>EffectBase</span>
+          <span><i style="background:#3fc8c0"></i>BuffBase</span>
+          <span><i style="background:#ffb13d"></i>CCBase</span>
+          <span><i style="background:#b88bff"></i>직접 상속</span>
+          <span><span class="ln" style="border-color:#8c99b5"></span>상속</span>
+        </div>
+        <div class="dgm-tag">Volcain · Effect Hierarchy</div>
+      </div>
+
+      <p class="code-note" style="margin:0 0 8px"><b>① 데이터 구조</b> — 모든 효과의 조상. 데이터 시트 정보·남은 턴·원본 스킬을 보관하고, 스탯 Modifier 부착을 공통으로 처리합니다.</p>
+      <pre><code><span class="c">// 버프·디버프·CC·DoT의 조상</span>
+<span class="k">public class</span> <span class="t">EffectBase</span> : <span class="t">BaseObject</span>
+{
+    <span class="k">public</span> <span class="t">Creature</span> Owner;
+    <span class="k">public</span> <span class="t">SkillBase</span> Skill;            <span class="c">// 이 효과를 만든 원본 스킬</span>
+    <span class="k">public</span> <span class="t">EffectData</span> EffectData;      <span class="c">// 효과 데이터 시트</span>
+    <span class="k">public int</span> Duration { <span class="k">get</span>; <span class="k">set</span>; }  <span class="c">// 남은 턴 수</span>
+
+    <span class="c">// 데이터 ID로 효과 정보 주입 (지속시간·원본 스킬 등)</span>
+    <span class="k">public virtual void</span> SetInfo(<span class="k">int</span> templateID, <span class="k">int</span> applyTemplateID, <span class="t">Creature</span> owner, <span class="t">EEffectSpawnType</span> spawnType, <span class="t">SkillBase</span> skill) { <span class="c">/* … */</span> }
+
+    <span class="k">public virtual void</span> ApplyEffect() { }                          <span class="c">// 효과 적용   (override)</span>
+    <span class="k">public virtual bool</span> ClearEffect(<span class="t">EEffectClearType</span> clearType) { <span class="c">/* … Despawn */</span> }
+
+    <span class="c">// 스탯 Modifier 부착 — Amount / PercentAdd / PercentMult를 데이터로 적용</span>
+    <span class="k">protected void</span> AddModifier(<span class="t">CreatureStat</span> stat, <span class="k">object</span> source, <span class="k">int</span> order = 0) { <span class="c">/* … */</span> }
+}</code></pre>
+
+      <p class="code-note" style="margin:12px 0 8px"><b>② 리플렉션 생성</b> — 데이터 시트의 클래스명으로 위 효과들을 코드 수정 없이 인스턴스화합니다.</p>
+      <pre><code><span class="c">// 데이터 시트의 ClassName으로 효과 클래스를 리플렉션 생성 — 코드 수정 없이 버프/CC 추가</span>
+<span class="k">public</span> <span class="t">EffectBase</span> GenerateEffect(<span class="k">int</span> effectId, <span class="k">int</span> effectApplyId, <span class="t">EEffectSpawnType</span> spawnType, <span class="t">SkillBase</span> skill)
+{
+    <span class="k">if</span> (Managers.Data.EffectDic.TryGetValue(effectId, <span class="k">out var</span> effectData) == <span class="k">false</span>) <span class="k">return null</span>;
+    <span class="k">if</span> (Managers.Data.EffectApplyDic.TryGetValue(effectApplyId, <span class="k">out var</span> applyData) == <span class="k">false</span>) <span class="k">return null</span>;
+
+    <span class="t">Type</span> effectType = <span class="t">Type</span>.GetType(effectData.ClassName);   <span class="c">// 예: "AttackBuff", "Aggravation"</span>
+    <span class="k">if</span> (effectType == <span class="k">null</span>) { Debug.LogError($<span class="s">"Effect Type not found: {effectData.ClassName}"</span>); <span class="k">return null</span>; }
+
+    <span class="c">// … 컴포넌트로 부착 후 SetInfo — 턴마다 지속시간 감소</span>
+    <span class="k">return</span> effect;
+}</code></pre>
+
+      <p class="code-note"><b>포인트</b> — 효과 클래스명을 데이터 시트에 두고 <b>리플렉션으로 인스턴스화</b> → 새 버프/CC는 클래스만 추가하면 데이터로 부착됩니다. 적용·중첩(UniqueGroup)·턴 단위 지속시간 감소를 EffectComponent가 일괄 관리합니다.</p>
+
+      <div class="seq-diagram">
+        <div class="dgm-title">Effect System <span class="dim">· Reflection Generation Sequence</span></div>
+        <svg viewBox="0 0 760 430" role="img" aria-label="효과 리플렉션 생성 시퀀스 다이어그램">
+          <defs>
+            <marker id="ef-a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff8a63"/></marker>
+            <marker id="ef-t" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3fc8c0"/></marker>
+            <marker id="ef-r" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#6b7794"/></marker>
+          </defs>
+
+          <!-- Lifelines -->
+          <g stroke="#25304a" stroke-dasharray="3 5">
+            <line x1="100" y1="60" x2="100" y2="404"/>
+            <line x1="315" y1="60" x2="315" y2="404"/>
+            <line x1="510" y1="60" x2="510" y2="404"/>
+            <line x1="678" y1="60" x2="678" y2="404"/>
+          </g>
+
+          <!-- Activation bars -->
+          <rect x="311" y="98" width="8" height="190" rx="2" fill="rgba(255,138,99,.10)" stroke="rgba(255,138,99,.30)"/>
+          <rect x="674" y="234" width="8" height="158" rx="2" fill="rgba(63,200,192,.10)" stroke="rgba(63,200,192,.30)"/>
+
+          <!-- Participant boxes -->
+          <g>
+            <rect x="40"  y="16" width="120" height="42" rx="7" fill="#182032" stroke="#3fc8c0"/>
+            <rect x="250" y="16" width="130" height="42" rx="7" fill="#1d1810" stroke="#ff8a63"/>
+            <rect x="458" y="16" width="104" height="42" rx="7" fill="#1d1a0e" stroke="#ffb13d"/>
+            <rect x="620" y="16" width="116" height="42" rx="7" fill="#182032" stroke="#25304a"/>
+          </g>
+          <g text-anchor="middle" font-family="ui-monospace,Consolas,monospace">
+            <text x="100" y="31" font-size="8.5" fill="#6b7794">skill</text>
+            <text x="315" y="31" font-size="8.5" fill="#6b7794">factory</text>
+            <text x="510" y="31" font-size="8.5" fill="#6b7794">data</text>
+            <text x="678" y="31" font-size="8.5" fill="#6b7794">effect</text>
+          </g>
+          <g text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" fill="#e6ebf5">
+            <text x="100" y="48" font-size="11.5">SkillBase</text>
+            <text x="315" y="48" font-size="11">EffectComponent</text>
+            <text x="510" y="48" font-size="11.5">DataManager</text>
+            <text x="678" y="48" font-size="11.5">EffectBase</text>
+          </g>
+
+          <!-- ===== ⓐ 효과 생성 요청 ===== -->
+          <rect x="10" y="73" width="138" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="79" y="86" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓐ 생성 요청 · 리플렉션</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="100" y1="106" x2="313" y2="106" stroke="#ff8a63" marker-end="url(#ef-a)"/>
+            <text x="207" y="101" text-anchor="middle" font-size="9.5" fill="#9aa7c2">DoSkill() → GenerateEffect(id, applyId)</text>
+
+            <line x1="315" y1="136" x2="508" y2="136" stroke="#ff8a63" marker-end="url(#ef-a)"/>
+            <text x="412" y="131" text-anchor="middle" font-size="9.5" fill="#9aa7c2">EffectDic / EffectApplyDic.TryGetValue()</text>
+            <text x="412" y="148" text-anchor="middle" font-size="8.5" fill="#6b7794">// 효과 · 적용 데이터 조회</text>
+
+            <line x1="510" y1="172" x2="317" y2="172" stroke="#6b7794" stroke-dasharray="4 4" marker-end="url(#ef-r)"/>
+            <text x="412" y="167" text-anchor="middle" font-size="9" fill="#6b7794">effectData · applyData 반환</text>
+
+            <path d="M315,192 h46 v10 h-44" fill="none" stroke="#3fc8c0" marker-end="url(#ef-t)"/>
+            <text x="368" y="191" font-size="9.5" fill="#3fc8c0">Type.GetType(ClassName)</text>
+            <text x="368" y="203" font-size="8.5" fill="#6b7794">// 리플렉션 타입 해석</text>
+          </g>
+
+          <!-- ===== ⓑ 부착 · 적용 ===== -->
+          <rect x="10" y="216" width="110" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="65" y="229" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓑ 부착 · 적용</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="315" y1="250" x2="676" y2="250" stroke="#ff8a63" marker-end="url(#ef-a)"/>
+            <text x="496" y="245" text-anchor="middle" font-size="9.5" fill="#9aa7c2">AddComponent() → new Effect</text>
+            <text x="496" y="262" text-anchor="middle" font-size="8.5" fill="#6b7794">// 컴포넌트로 부착</text>
+
+            <line x1="315" y1="286" x2="676" y2="286" stroke="#ff8a63" marker-end="url(#ef-a)"/>
+            <text x="496" y="281" text-anchor="middle" font-size="9.5" fill="#9aa7c2">SetInfo(templateID, owner, skill)</text>
+            <text x="496" y="298" text-anchor="middle" font-size="8.5" fill="#6b7794">// 지속시간 · 원본 스킬 주입</text>
+
+            <path d="M678,312 h-46 v10 h44" fill="none" stroke="#3fc8c0" marker-end="url(#ef-t)"/>
+            <text x="628" y="311" text-anchor="end" font-size="9.5" fill="#3fc8c0">ApplyEffect()</text>
+            <text x="628" y="323" text-anchor="end" font-size="8.5" fill="#6b7794">// 스탯 Modifier · CC / DoT 적용</text>
+          </g>
+
+          <!-- ===== ⓒ 턴 경과 · 해제 ===== -->
+          <rect x="10" y="346" width="124" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="72" y="359" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓒ 턴 경과 · 해제</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <path d="M678,378 h-46 v10 h44" fill="none" stroke="#3fc8c0" marker-end="url(#ef-t)"/>
+            <text x="628" y="377" text-anchor="end" font-size="9.5" fill="#3fc8c0">Duration-- → 0 → ClearEffect()</text>
+            <text x="628" y="389" text-anchor="end" font-size="8.5" fill="#6b7794">// 턴마다 감소 후 Despawn(회수)</text>
+          </g>
+
+          <text x="380" y="421" text-anchor="middle" font-size="10" fill="#6b7794" font-family="system-ui,sans-serif">스킬은 ID만 전달 → 팩토리가 데이터 조회 · 리플렉션 생성 · 부착 → 베이스가 적용 · 해제 책임</text>
+        </svg>
+
+        <div class="dgm-legend">
+          <span><span class="ln" style="border-color:#ff8a63"></span>호출 / 실행</span>
+          <span><span class="ln" style="border-color:#3fc8c0"></span>self · 내부 처리</span>
+          <span><span class="ln dash" style="border-color:#6b7794"></span>반환</span>
+          <span><i style="background:rgba(255,177,61,.5)"></i>단계 구분</span>
+        </div>
+        <div class="dgm-tag">Volcain · Effect Sequence</div>
+      </div>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">StageComponent.cs — Wave / 스테이지 진행 (A2)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// 현재 인덱스 + 1 이 존재하면 다음 웨이브/스테이지가 남아있음</span>
+<span class="k">public bool</span> HasNextStage =&gt; CurrentStageIndex + 1 &lt; Stages.Count;
+
+<span class="c">// 스테이지 클리어 시 호출 — 다음이 있으면 전환, 없으면 전체 클리어 이벤트 발행</span>
+<span class="k">private void</span> OnStageClear(<span class="t">Stage</span> clearedStage)
+{
+    clearedStage.OnStageClear -= OnStageClear;
+    <span class="k">int</span> nextIndex = CurrentStageIndex + 1;
+
+    <span class="k">if</span> (HasNextStage)
+        _stageTransitionCoroutine = StartCoroutine(CoTransitionToNextStage(nextIndex));
+    <span class="k">else</span>
+        OnAllStagesClear?.Invoke();   <span class="c">// 모든 웨이브 클리어</span>
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 웨이브(스테이지)를 인덱스로 관리해 클리어마다 다음으로 전환하고, 마지막이면 전체 클리어 이벤트를 발행. <code>TurnManager</code>는 <code>HasNextStage</code>를 보고 턴 흐름을 분기합니다.</p>
+    </details>
+  </article>
+
+  <!-- ========== 5. 그리드 기반 맵 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">🗺️</span>
+      <div>
+        <span class="role-tag">설계 · 구현 · 툴</span>
+        <h3>그리드 기반 타일 시스템</h3>
+        <div class="sys-items">MapManager.cs · OverlayTile.cs · MapEditor.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">Unity 그리드 기반으로 타일 인터랙션 전반을 구축했습니다. 이동·스킬 범위 계산을 <b>GC 할당 없이</b> 처리하도록 최적화했습니다.</p>
+    <ul class="sys-list">
+      <li><b>Tilemap_Collision 파이프라인</b> — 에디터에서 충돌 타일맵을 txt로 직렬화하고, Addressable로 로드해 런타임 충돌 판정에 사용</li>
+      <li><b>OverlayTile · PathFinder</b> — A* 점수(G/H/F)를 보관하는 타일 + 그 점수로 최단 경로를 찾는 길찾기 (B3)</li>
+      <li><b>GC-프리 BFS</b> — 멤버 버퍼 재사용으로 범위 계산 중 GC 스파이크 제거 (B4)</li>
+      <li><b>이동 범위 외곽선 비트마스크</b> — 4방향 인접 판정을 비트로 합쳐 외곽선 스프라이트를 선택하는 알고리즘 연구</li>
+      <li><b>ShapeParser</b> — 텍스트로 정의한 스킬 형태(고정·직선)를 캐릭터 방향에 맞게 회전해 영향 타일 계산</li>
+      <li><b>CustomTile</b> — 시작 위치·환경 오브젝트 스폰 데이터 (B5)</li>
+      <li><b>MapEditor</b> 커스텀 툴로 맵/타일 데이터 편집 (B7)</li>
+    </ul>
+    <div class="tags"><span class="tag">Grid-Based</span><span class="tag">A* Pathfinding</span><span class="tag">BFS</span><span class="tag">Bitmask</span><span class="tag">GC 최적화</span><span class="tag">Custom Editor</span></div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">MapEditor.cs · MapManager.cs — Tilemap_Collision → Addressable 충돌 데이터</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <p class="code-note" style="margin:0 0 8px"><b>① MapEditor.cs</b> — 에디터 메뉴에서 선택한 맵 프리팹의 <code>Tilemap_Collision</code>을 순회해 충돌 데이터를 txt로 내보냅니다.</p>
+      <pre><code><span class="c">// Editor: 선택한 맵에서 Tilemap_Collision을 찾아 클라이언트/서버 공용 txt로 직렬화</span>
+[<span class="t">MenuItem</span>(<span class="s">"Tools/MapGenerate %#m"</span>)]
+<span class="k">private static void</span> GenerateMap()
+{
+    <span class="k">foreach</span> (<span class="t">GameObject</span> go <span class="k">in</span> Selection.gameObjects)
+    {
+        <span class="t">Tilemap</span> tile = Util.FindChild&lt;<span class="t">Tilemap</span>&gt;(go, <span class="s">"Tilemap_Collision"</span>, <span class="k">true</span>);
+        <span class="k">using</span> (<span class="k">var</span> writer = File.CreateText($<span class="s">"Assets/@Resources/Data/MapData/{go.name}Collision.txt"</span>))
+        {
+            writer.WriteLine(tile.cellBounds.xMin); writer.WriteLine(tile.cellBounds.xMax);
+            writer.WriteLine(tile.cellBounds.yMin); writer.WriteLine(tile.cellBounds.yMax);
+            writer.WriteLine(tile.cellBounds.zMin); writer.WriteLine(tile.cellBounds.zMax);
+
+            <span class="k">for</span> (<span class="k">int</span> z = tile.cellBounds.zMin; z &lt;= tile.cellBounds.zMax; z++)
+            {
+                <span class="k">for</span> (<span class="k">int</span> y = tile.cellBounds.yMax; y &gt;= tile.cellBounds.yMin; y--)
+                {
+                    <span class="k">for</span> (<span class="k">int</span> x = tile.cellBounds.xMin; x &lt;= tile.cellBounds.xMax; x++)
+                    {
+                        <span class="t">TileBase</span> tileBase = tile.GetTile(<span class="k">new</span> <span class="t">Vector3Int</span>(x, y, z));
+                        writer.Write(tileBase == <span class="k">null</span> ? MAP_TOOL_WALL :
+                            tileBase.name.Contains(<span class="s">"O"</span>)     ? MAP_TOOL_NONE :
+                            tileBase.name.Contains(<span class="s">"Env"</span>)   ? MAP_TOOL_ENV :
+                            tileBase.name.Contains(<span class="s">"Start"</span>) ? MAP_TOOL_StartPos :
+                            MAP_TOOL_SEMI_WALL);
+                    }
+                    writer.WriteLine();
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+      <p class="code-note" style="margin:12px 0 8px"><b>② MapManager.cs</b> — Addressable에 등록된 <code>{mapName}Collision</code> TextAsset을 로드해 충돌 배열로 복원합니다.</p>
+      <pre><code><span class="c">// Runtime: Addressables key "{mapName}Collision"로 TextAsset 로드 후 충돌 배열 구성</span>
+<span class="k">void</span> ParseCollisionData(<span class="t">GameObject</span> map, <span class="k">string</span> mapName)
+{
+    Util.FindChild(map, <span class="s">"Tilemap_Collision"</span>, <span class="k">true</span>)?.SetActive(<span class="k">false</span>);
+    <span class="t">TextAsset</span> txt = Managers.Resource.Load&lt;<span class="t">TextAsset</span>&gt;($<span class="s">"{mapName}Collision"</span>);
+    <span class="t">StringReader</span> reader = <span class="k">new</span>(txt.text);
+
+    _MinX = <span class="k">int</span>.Parse(reader.ReadLine()); _MaxX = <span class="k">int</span>.Parse(reader.ReadLine());
+    _MinY = <span class="k">int</span>.Parse(reader.ReadLine()); _MaxY = <span class="k">int</span>.Parse(reader.ReadLine());
+    _MinZ = <span class="k">int</span>.Parse(reader.ReadLine()); _MaxZ = <span class="k">int</span>.Parse(reader.ReadLine());
+    <span class="k">int</span> xCount = _MaxX - _MinX + 1, yCount = _MaxY - _MinY + 1;
+
+    <span class="k">for</span> (<span class="k">int</span> z = 0; z &lt; _MaxZ - _MinZ + 1; z++)
+    {
+        <span class="t">ECellCollisionType</span>[,] collision = <span class="k">new</span> <span class="t">ECellCollisionType</span>[xCount, yCount];
+        <span class="k">for</span> (<span class="k">int</span> y = 0; y &lt; yCount; y++)
+        {
+            <span class="k">string</span> line = reader.ReadLine();
+            <span class="k">for</span> (<span class="k">int</span> x = 0; x &lt; xCount; x++)
+                collision[x, y] = line[x] == MAP_TOOL_WALL ? <span class="t">ECellCollisionType</span>.Wall :
+                                  line[x] == MAP_TOOL_SEMI_WALL ? <span class="t">ECellCollisionType</span>.SemiWall :
+                                  <span class="t">ECellCollisionType</span>.None;
+        }
+        _collisions.Add(collision);
+    }
+}
+</code></pre>
+
+      <p class="code-note" style="margin:12px 0 8px"><b>③ MapManager.cs</b> — 복원된 충돌 배열에서 이동 가능한 셀만 <code>OverlayTile</code>로 생성해 런타임 판정에 사용합니다.</p>
+      <pre><code><span class="c">// None 셀만 OverlayTile로 생성해 이동/스킬/경로탐색에서 실제 충돌 판정 기준으로 사용</span>
+<span class="k">private void</span> SpawnOverlayTileByTileData()
+{
+    <span class="c">// _collisions[z] 배열을 순회하며 이동 가능한 셀만 OverlayTile로 변환</span>
+    ...
+
+    <span class="k">if</span> (_collision[x, y] == <span class="t">ECellCollisionType</span>.None)
+    {
+        <span class="t">Vector3Int</span> gridPos = <span class="k">new</span>(_MinX + x, _MaxY - y, _MinZ + z);
+        <span class="t">OverlayTile</span> tile = Managers.Object.SpawnTileObject(<span class="s">"DevOverlayTile"</span>, Managers.Object.OverlayTileRoot).GetComponent&lt;<span class="t">OverlayTile</span>&gt;();
+        tile.gridLocation = gridPos;
+        mapDict.Add(gridPos, tile);
+    }
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 기획자가 씬의 <code>Tilemap_Collision</code>에 찍은 타일을 <code>0/1/2/3/4</code> 문자 맵으로 저장하고, <code>DevMapCollision</code>·<code>00_TutorialCollision</code> 같은 Addressable TextAsset으로 로드합니다. 런타임에서는 <code>Wall</code>/<code>SemiWall</code>/<code>None</code>으로 복원한 뒤, 이동 가능한 <code>None</code> 셀만 <code>OverlayTile</code>과 <code>mapDict</code>에 등록해 이동·스킬·경로탐색의 충돌 기준으로 사용합니다.</p>
+
+      <div class="seq-diagram">
+        <div class="dgm-title">Map System <span class="dim">· Editor → Collision Data → Runtime Sequence</span></div>
+        <svg viewBox="0 0 760 450" role="img" aria-label="맵 에디터-런타임 충돌 데이터 파이프라인 시퀀스">
+          <defs>
+            <marker id="mp-a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff8a63"/></marker>
+            <marker id="mp-r" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#6b7794"/></marker>
+            <marker id="mp-t" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3fc8c0"/></marker>
+          </defs>
+
+          <!-- Lifelines -->
+          <g stroke="#25304a" stroke-dasharray="3 5">
+            <line x1="80"  y1="60" x2="80"  y2="432"/>
+            <line x1="230" y1="60" x2="230" y2="432"/>
+            <line x1="380" y1="60" x2="380" y2="432"/>
+            <line x1="530" y1="60" x2="530" y2="432"/>
+            <line x1="680" y1="60" x2="680" y2="432"/>
+          </g>
+
+          <!-- Activation bars -->
+          <rect x="226" y="98"  width="8" height="126" rx="2" fill="rgba(255,177,61,.10)" stroke="rgba(255,177,61,.35)"/>
+          <rect x="526" y="272" width="8" height="148" rx="2" fill="rgba(255,138,99,.10)" stroke="rgba(255,138,99,.30)"/>
+
+          <!-- Participant boxes -->
+          <g>
+            <rect x="24"  y="16" width="112" height="42" rx="7" fill="#182032" stroke="#25304a"/>
+            <rect x="174" y="16" width="112" height="42" rx="7" fill="#1d1a0e" stroke="#ffb13d"/>
+            <rect x="324" y="16" width="112" height="42" rx="7" fill="#0f1a14" stroke="#4fd6a0"/>
+            <rect x="474" y="16" width="112" height="42" rx="7" fill="#1d1810" stroke="#ff8a63"/>
+            <rect x="624" y="16" width="112" height="42" rx="7" fill="#10152a" stroke="#5ea2ff"/>
+          </g>
+          <g text-anchor="middle" font-family="ui-monospace,Consolas,monospace">
+            <text x="80"  y="31" font-size="8.5" fill="#6b7794">trigger</text>
+            <text x="230" y="31" font-size="8.5" fill="#ffb13d">editor tool</text>
+            <text x="380" y="31" font-size="8.5" fill="#4fd6a0">Unity data · FS</text>
+            <text x="530" y="31" font-size="8.5" fill="#ff8a63">runtime</text>
+            <text x="680" y="31" font-size="8.5" fill="#5ea2ff">서비스</text>
+          </g>
+          <g text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" fill="#e6ebf5">
+            <text x="80"  y="48" font-size="10.5">기획자 · 에디터</text>
+            <text x="230" y="48" font-size="11.5">MapEditor.cs</text>
+            <text x="380" y="48" font-size="11">Tilemap · File</text>
+            <text x="530" y="48" font-size="11.5">MapManager.cs</text>
+            <text x="680" y="48" font-size="10.5">Resource · Object</text>
+          </g>
+
+          <!-- ===== ⓐ 에디터 타임 ===== -->
+          <rect x="10" y="73" width="124" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="72" y="86" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓐ 에디터 타임</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="80" y1="104" x2="228" y2="104" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="155" y="99" text-anchor="middle" font-size="9.5" fill="#9aa7c2">[Ctrl+Shift+M] GenerateMap()</text>
+
+            <line x1="230" y1="128" x2="378" y2="128" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="355" y="123" text-anchor="middle" font-size="9.5" fill="#9aa7c2">FindChild("Tilemap_Collision") + GetTile 순회</text>
+            <text x="355" y="140" text-anchor="middle" font-size="8.5" fill="#6b7794">// z/y/x bounds 전체 순회</text>
+
+            <line x1="380" y1="158" x2="232" y2="158" stroke="#6b7794" stroke-dasharray="4 4" marker-end="url(#mp-r)"/>
+
+            <path d="M230,172 h44 v10 h-42" fill="none" stroke="#3fc8c0" marker-end="url(#mp-t)"/>
+            <text x="280" y="171" font-size="9.5" fill="#3fc8c0">tileBase.name → MAP_TOOL_*char 매핑</text>
+            <text x="280" y="183" font-size="8.5" fill="#6b7794">// char : NONE · ENV · StartPos · WALL · SEMI_WALL</text>
+
+            <line x1="230" y1="202" x2="378" y2="202" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="345" y="197" text-anchor="middle" font-size="9.5" fill="#9aa7c2">File.CreateText → bounds + char 맵 직렬화</text>
+          </g>
+
+          <!-- Divider -->
+          <line x1="30" y1="232" x2="730" y2="232" stroke="#3a4a6e" stroke-dasharray="2 4"/>
+          <rect x="252" y="222" width="256" height="20" rx="10" fill="#141926" stroke="#25304a"/>
+          <text x="380" y="236" fill="#ffb13d" font-size="10.5" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">에디터 타임 ▲   런타임 ▼</text>
+
+          <!-- ===== ⓑ 런타임 ===== -->
+          <rect x="10" y="248" width="96" height="18" rx="9" fill="rgba(255,177,61,.12)" stroke="#3a2e12"/>
+          <text x="58" y="261" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ffb13d" font-family="system-ui,sans-serif">ⓑ 런타임</text>
+
+          <g font-family="ui-monospace,Consolas,monospace">
+            <line x1="80" y1="278" x2="528" y2="278" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="305" y="273" text-anchor="middle" font-size="9.5" fill="#9aa7c2">LoadMap(mapName)</text>
+
+            <line x1="530" y1="300" x2="678" y2="300" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="605" y="295" text-anchor="middle" font-size="9.5" fill="#9aa7c2">Resource.Instantiate(mapName)</text>
+            <text x="605" y="312" text-anchor="middle" font-size="8.5" fill="#6b7794">// map 프리팹 로드 · 배치</text>
+
+            <line x1="680" y1="328" x2="532" y2="328" stroke="#6b7794" stroke-dasharray="4 4" marker-end="url(#mp-r)"/>
+
+            <line x1="530" y1="348" x2="678" y2="348" stroke="#ff8a63" marker-end="url(#mp-a)"/>
+            <text x="605" y="343" text-anchor="middle" font-size="9.5" fill="#9aa7c2">Load&lt;TextAsset&gt;(mapNameCollision)</text>
+            <text x="605" y="360" text-anchor="middle" font-size="8.5" fill="#6b7794">// Addressable 키로 로드</text>
+
+            <line x1="680" y1="376" x2="532" y2="376" stroke="#6b7794" stroke-dasharray="4 4" marker-end="url(#mp-r)"/>
+
+            <path d="M530,392 h44 v10 h-42" fill="none" stroke="#3fc8c0" marker-end="url(#mp-t)"/>
+            <text x="580" y="400" font-size="9.5" fill="#3fc8c0">ParseCollisionData()</text>
+
+            <path d="M530,414 h44 v10 h-42" fill="none" stroke="#3fc8c0" marker-end="url(#mp-t)"/>
+            <text x="580" y="421" font-size="9.5" fill="#3fc8c0">SpawnOverlayTileByTileData()</text>
+          </g>
+
+          <text x="380" y="443" text-anchor="middle" font-size="10" fill="#6b7794" font-family="system-ui,sans-serif">기획자 타일 편집 → 에디터 직렬화 → Addressable 로드 → 충돌 배열 복원 → OverlayTile 등록</text>
+        </svg>
+
+        <div class="dgm-legend">
+          <span><span class="ln" style="border-color:#ff8a63"></span>호출 / 실행</span>
+          <span><span class="ln" style="border-color:#3fc8c0"></span>self · 내부 처리</span>
+          <span><span class="ln dash" style="border-color:#6b7794"></span>반환</span>
+          <span><i style="background:rgba(255,177,61,.5)"></i>단계 구분</span>
+        </div>
+        <div class="dgm-tag">Volcain · Map Pipeline Sequence</div>
+      </div>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">이동 범위 외곽선 추출 — 4방향 비트마스크 알고리즘</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <p class="code-note" style="margin:0 0 12px"><b>문제</b> — 이동 가능 범위를 면(面)으로 가득 칠하지 않고 <b>영역의 외곽선만</b> 그리고 싶었습니다. 핵심은 "각 타일의 4방향 이웃 중 어디가 범위 바깥인가"를 판별해, 그 조합에 맞는 외곽선 스프라이트(직선·코너·ㄷ자·단독)를 고르는 것입니다.</p>
+
+      <div class="om-viz">
+        <!-- ① 이동 범위 + 외곽선 -->
+        <div class="om-stage">
+          <div class="om-cap">① 이동 범위의 바깥쪽 변에만 외곽선</div>
+          <div class="om-grid">
+            <span class="om-cell"></span><span class="om-cell"></span><span class="om-cell om-in om-focus om-t om-l om-r"></span><span class="om-cell"></span><span class="om-cell"></span>
+            <span class="om-cell"></span><span class="om-cell om-in om-t om-l"></span><span class="om-cell om-in"></span><span class="om-cell om-in om-t om-r"></span><span class="om-cell"></span>
+            <span class="om-cell om-in om-t om-b om-l"></span><span class="om-cell om-in"></span><span class="om-cell om-in"></span><span class="om-cell om-in"></span><span class="om-cell om-in om-t om-b om-r"></span>
+            <span class="om-cell"></span><span class="om-cell om-in om-b om-l"></span><span class="om-cell om-in"></span><span class="om-cell om-in om-b om-r"></span><span class="om-cell"></span>
+            <span class="om-cell"></span><span class="om-cell"></span><span class="om-cell om-in om-b om-l om-r"></span><span class="om-cell"></span><span class="om-cell"></span>
+          </div>
+        </div>
+
+        <div class="om-arrow">→</div>
+
+        <!-- ② 한 타일의 4방향 판정 -->
+        <div class="om-stage">
+          <div class="om-cap">② 주황 타일의 4방향 검사 → mask</div>
+          <div class="om-ex">
+            <span class="om-ec empty"></span><span class="om-ec out">위<br>=1</span><span class="om-ec empty"></span>
+            <span class="om-ec out">왼<br>=8</span><span class="om-ec ctr">현재</span><span class="om-ec out">오른<br>=2</span>
+            <span class="om-ec empty"></span><span class="om-ec in">안<br>(0)</span><span class="om-ec empty"></span>
+          </div>
+          <div class="om-calc">바깥 = 위·오른·왼<br><b>mask = 1 | 2 | 8 = 11</b><br>→ '위를 감싸는 ㄷ' 스프라이트</div>
+        </div>
+
+        <div class="om-legend">
+          <span><i style="background:var(--blue)"></i>이동 가능 타일</span>
+          <span><i class="line"></i>바깥과 맞닿은 변 (외곽선)</span>
+          <span><i style="background:var(--accent)"></i>예시로 분석한 타일</span>
+        </div>
+      </div>
+
+      <pre><code><span class="c">// 4방향에 겹치지 않는 비트값 부여 → 빈 방향만 OR로 합치면 고유한 mask가 나온다</span>
+<span class="c">//   위=1(0001)  오른쪽=2(0010)  아래=4(0100)  왼쪽=8(1000)</span>
+<span class="c">//   ex) 위+왼쪽이 비면 1|8 = 9  → '왼쪽 위 코너' 스프라이트</span>
+<span class="c">//       위+오른쪽+아래가 비면 1|2|4 = 7 → '오른쪽을 감싸는 ㄷ', 15 = 단독 타일</span>
+<span class="k">private int</span> CalculateMoveOutlineMask(<span class="t">OverlayTile</span> tile, <span class="t">HashSet</span>&lt;<span class="t">OverlayTile</span>&gt; moveSet)
+{
+    <span class="t">Vector3Int</span> pos = tile.gridLocation;   <span class="c">// 월드 좌표가 아닌 '셀 좌표' 기준</span>
+    <span class="k">int</span> mask = 0;
+
+    <span class="k">if</span> (!IsMoveTile(pos + <span class="k">new</span> <span class="t">Vector3Int</span>(0,  1, 0), moveSet)) mask |= 1;  <span class="c">// 위가 바깥</span>
+    <span class="k">if</span> (!IsMoveTile(pos + <span class="k">new</span> <span class="t">Vector3Int</span>(1,  0, 0), moveSet)) mask |= 2;  <span class="c">// 오른쪽이 바깥</span>
+    <span class="k">if</span> (!IsMoveTile(pos + <span class="k">new</span> <span class="t">Vector3Int</span>(0, -1, 0), moveSet)) mask |= 4;  <span class="c">// 아래가 바깥</span>
+    <span class="k">if</span> (!IsMoveTile(pos + <span class="k">new</span> <span class="t">Vector3Int</span>(-1, 0, 0), moveSet)) mask |= 8;  <span class="c">// 왼쪽이 바깥</span>
+
+    <span class="k">return</span> mask;   <span class="c">// 0=내부 타일(외곽 없음), 1~15=방향 조합별 외곽선 번호표</span>
+}
+
+<span class="c">// 이웃 셀이 '현재 이동 가능 집합'에 들어있는지 — 전체 맵 존재 여부가 아니라 범위 포함 여부가 기준</span>
+<span class="k">private bool</span> IsMoveTile(<span class="t">Vector3Int</span> pos, <span class="t">HashSet</span>&lt;<span class="t">OverlayTile</span>&gt; moveSet)
+    =&gt; Managers.Map.mapDict.TryGetValue(pos, <span class="k">out var</span> t) &amp;&amp; moveSet.Contains(t);</code></pre>
+      <p class="code-note"><b>연구 포인트</b> — 4방향에 1·2·4·8처럼 <b>겹치지 않는 비트</b>를 주면 OR로 합쳐도 어느 방향이 켜졌는지 되읽을 수 있어, 16가지 조합을 <code>mask → 스프라이트</code> 테이블 한 번 조회로 매핑할 수 있습니다. 멤버십 판정은 <code>List.Contains(O(N))</code> 대신 재사용 <code>HashSet</code>으로 <b>전체 O(N)</b>을 유지하고, 매 프레임이 아니라 <b>이동 범위가 바뀌는 시점</b>에만 계산하도록 dirty 갱신을 설계해 hover 중 반복 계산을 막았습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">OverlayTile.cs · PathFinder.cs — A* 길찾기 (B3)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+
+      <div class="af-viz">
+        <div class="af-grid">
+          <span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span>
+          <span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell af-goal">G</span><span class="af-cell"></span>
+          <span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell af-wall">✕</span><span class="af-cell af-path"></span><span class="af-cell"></span>
+          <span class="af-cell"></span><span class="af-cell"></span><span class="af-cell"></span><span class="af-cell af-wall">✕</span><span class="af-cell af-path"></span><span class="af-cell"></span>
+          <span class="af-cell"></span><span class="af-cell af-start">S</span><span class="af-cell af-path"></span><span class="af-cell af-path"></span><span class="af-cell af-path"></span><span class="af-cell"></span>
+        </div>
+
+        <div class="af-side">
+          <div class="af-ftile">
+            <span class="big">F = 6</span>
+            <span class="sub">G 2 (시작 거리) + H 4 (목표 추정)</span>
+          </div>
+          열린 목록에서 <b>F가 가장 작은</b> 타일부터 확장하고, 벽(<code>Blocked/Env</code>)은 건너뜁니다. 목표에 도달하면 <code>previousTile</code>을 거꾸로 따라가 경로를 복원합니다.
+        </div>
+
+        <div class="af-legend">
+          <span><i style="background:var(--green)"></i>S · 시작</span>
+          <span><i style="background:var(--accent)"></i>G · 목표</span>
+          <span><i style="background:var(--blue)"></i>탐색된 최단 경로</span>
+          <span><i style="background:#2a3142"></i>✕ · 벽(이동 불가)</span>
+        </div>
+      </div>
+
+      <p class="code-note" style="margin:0 0 8px"><b>① 데이터</b> — 각 타일(<code>OverlayTile</code>)이 A* 점수(G·H·F)와 역추적 포인터를 직접 보관합니다.</p>
+      <pre><code><span class="k">public class</span> <span class="t">OverlayTile</span> : <span class="t">InitBase</span>
+{
+    <span class="k">public int</span> G;                          <span class="c">// 시작 → 현재 거리</span>
+    <span class="k">public int</span> H;                          <span class="c">// 현재 → 목표 거리</span>
+    <span class="k">public int</span> F { <span class="k">get</span> { <span class="k">return</span> G + H; } }   <span class="c">// A* 최종 스코어</span>
+    <span class="k">public</span> <span class="t">ETileState</span> TileState = <span class="t">ETileState</span>.None; <span class="c">// None/Blocked/Reserved/Env</span>
+    <span class="k">public</span> <span class="t">OverlayTile</span> previousTile;          <span class="c">// 경로 역추적용</span>
+    <span class="k">public</span> <span class="t">Vector3Int</span> gridLocation;
+
+    <span class="k">public</span> <span class="t">Creature</span> overCreature { <span class="k">get</span>; <span class="k">private set</span>; } <span class="c">// 타일 위 캐릭터</span>
+    <span class="k">public</span> <span class="t">Env</span> OverEnv { <span class="k">get</span>; <span class="k">private set</span>; }            <span class="c">// 타일 위 환경물</span>
+}</code></pre>
+
+      <p class="code-note" style="margin:12px 0 8px"><b>② 탐색</b> — 위 점수를 이용해 열린 목록에서 F가 최소인 타일을 확장하며 최단 경로를 찾습니다.</p>
+      <pre><code><span class="c">// 재사용 버퍼 — 매 탐색마다 컬렉션을 새로 만들지 않아 GC 할당 제거</span>
+<span class="k">private readonly</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; _openList = <span class="k">new</span>(32);
+<span class="k">private readonly</span> <span class="t">HashSet</span>&lt;<span class="t">OverlayTile</span>&gt; _closedList = <span class="k">new</span>();
+<span class="k">private readonly</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; _surroundingBuffer = <span class="k">new</span>(8);
+
+<span class="c">// 시작 → 목표 최단 경로. inRangeTiles로 탐색 공간을 '이동 가능 범위'로 한정</span>
+<span class="k">public</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; FindPath(<span class="t">OverlayTile</span> start, <span class="t">OverlayTile</span> end, <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; inRangeTiles)
+{
+    _openList.Clear(); _closedList.Clear();
+    <span class="k">if</span> (!inRangeTiles.Contains(end) &amp;&amp; inRangeTiles.Count &gt; 0)
+        <span class="k">return new</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt;();   <span class="c">// 도달 불가 목표는 즉시 컷</span>
+
+    _openList.Add(start);
+    <span class="k">while</span> (_openList.Count &gt; 0)
+    {
+        <span class="c">// LINQ OrderBy 대신 수동 최솟값 탐색 → Enumerator 할당 제거</span>
+        <span class="t">OverlayTile</span> current = _openList[0];
+        <span class="k">for</span> (<span class="k">int</span> i = 1; i &lt; _openList.Count; i++)
+            <span class="k">if</span> (_openList[i].F &lt; current.F) current = _openList[i];
+
+        _openList.Remove(current); _closedList.Add(current);
+        <span class="k">if</span> (current == end) <span class="k">return</span> GetFinishedList(start, end);   <span class="c">// previousTile 역추적</span>
+
+        Managers.Map.GetSurroundingTiles(current.gridLocation, _surroundingBuffer);
+        <span class="k">foreach</span> (<span class="k">var</span> tile <span class="k">in</span> _surroundingBuffer)
+        {
+            <span class="k">if</span> (tile.TileState == <span class="t">ETileState</span>.Blocked || tile.TileState == <span class="t">ETileState</span>.Env
+                || _closedList.Contains(tile)) <span class="k">continue</span>;
+
+            tile.G = current.G + 1;                          <span class="c">// 시작→현재 실제 거리</span>
+            tile.H = GetManhattenDistance(end, tile);        <span class="c">// 현재→목표 휴리스틱</span>
+            tile.previousTile = current;
+            <span class="k">if</span> (!_openList.Contains(tile)) _openList.Add(tile);
+        }
+    }
+    <span class="k">return new</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt;();
+}
+
+<span class="c">// 대각 이동이 없는 그리드라 맨해튼 거리가 가장 효율적인 휴리스틱</span>
+<span class="k">public int</span> GetManhattenDistance(<span class="t">OverlayTile</span> a, <span class="t">OverlayTile</span> b)
+    =&gt; Mathf.Abs(a.gridLocation.x - b.gridLocation.x) + Mathf.Abs(a.gridLocation.y - b.gridLocation.y);</code></pre>
+      <p class="code-note"><b>포인트</b> — <code>OverlayTile</code>이 들고 있는 G/H/F 스코어로 A*를 돌려 클릭 지점까지의 최단 경로를 구합니다. <code>inRangeTiles</code>로 탐색 공간을 이동 범위로 한정해 불필요한 확장을 막고, open/closed 리스트를 멤버 버퍼로 재사용해 길찾기 중 GC를 제거했습니다. 또한 LINQ <code>OrderBy</code> 대신 수동 최솟값 탐색으로 Enumerator 할당까지 없앴습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">ShapeParser.cs — 텍스트 기반 스킬 범위</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <p class="code-note" style="margin:0 0 12px"><b>설계</b> — 스킬 모양을 코드가 아닌 <b>텍스트 파일</b>로 정의합니다(<code>1</code>=원점, <code>2</code>=고정 타일, <code>3·4</code>=직선 확장). 기획자가 숫자만 찍어 새 범위를 만들 수 있고, 같은 형태를 캐릭터가 바라보는 방향에 맞춰 회전해 적용합니다.</p>
+
+      <div class="sp-viz">
+        <!-- 1) 텍스트 정의 -->
+        <div class="sp-stage">
+          <div class="sp-cap">① 텍스트 정의</div>
+          <div class="sp-grid">
+            <span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span>
+            <span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span>
+            <span class="sp-cell sp-o">1</span><span class="sp-cell sp-a">2</span><span class="sp-cell sp-a">2</span><span class="sp-cell">0</span><span class="sp-cell">0</span>
+            <span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span>
+            <span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span><span class="sp-cell">0</span>
+          </div>
+        </div>
+
+        <div class="sp-arrow">→</div>
+
+        <!-- 2) 캐릭터 방향에 따라 회전 -->
+        <div class="sp-stage">
+          <div class="sp-cap">② 캐릭터 방향에 맞춰 회전</div>
+          <div class="sp-rot">
+            <div class="sp-dir">
+              <div class="d">▶ 오른쪽</div>
+              <div class="sp-grid sm">
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-o"></span><span class="sp-cell sp-a"></span><span class="sp-cell sp-a"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+              </div>
+            </div>
+            <div class="sp-dir">
+              <div class="d">◀ 왼쪽</div>
+              <div class="sp-grid sm">
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell sp-a"></span><span class="sp-cell sp-a"></span><span class="sp-cell sp-o"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+              </div>
+            </div>
+            <div class="sp-dir">
+              <div class="d">▲ 위</div>
+              <div class="sp-grid sm">
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-a"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-a"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-o"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+              </div>
+            </div>
+            <div class="sp-dir">
+              <div class="d">▼ 아래</div>
+              <div class="sp-grid sm">
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-o"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-a"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+                <span class="sp-cell"></span><span class="sp-cell"></span><span class="sp-cell sp-a"></span><span class="sp-cell"></span><span class="sp-cell"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-legend">
+          <span><i style="background:var(--accent)"></i>1 · 원점(캐릭터 기준점)</span>
+          <span><i style="background:var(--blue)"></i>2 · 영향받는 타일</span>
+          <span><i style="background:rgba(255,255,255,.05)"></i>0 · 빈 칸</span>
+        </div>
+      </div>
+
+      <!-- 캡처 이미지 슬롯: 아래 figure의 주석을 풀고 src 경로를 넣으면 실제 인게임 캡처가 표시됩니다 -->
+      <div class="shot">
+        
+        <figure>
+          <img src="images/shapeparser-ingame.png" alt="ShapeParser 인게임 스킬 범위 캡처">
+          <figcaption>인게임 적용 화면 — 텍스트로 정의한 형태가 캐릭터 방향에 맞춰 타일에 표시된 모습</figcaption>
+        </figure>
+        <!--
+          <div class="shot-ph">
+            <span class="ic">🖼️</span>
+            <span class="t">인게임 캡처 이미지 자리</span>
+            <span class="s">캡처 파일을 <code>docs/portfolio/images/</code>에 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제한 뒤 <code>src</code> 경로를 수정하세요.</span>
+          </div>
+          -->
+      </div>
+
+      <pre><code><span class="c">// 스킬이 영향을 줄 모든 타일을 계산하는 진입점</span>
+<span class="k">public</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; GetAbilityTileLocations(<span class="t">OverlayTile</span> abilityPos, <span class="t">TextAsset</span> shape, <span class="t">Vector2Int</span> charPos)
+{
+    <span class="k">int</span>[,] abilityMap = ParseTxtAbilityToIntArray(shape);        <span class="c">// 텍스트 → 2D 정수 배열</span>
+    <span class="t">List</span>&lt;<span class="t">Vector2</span>&gt; origin = FindLocationsInArray(1, abilityMap, <span class="k">null</span>); <span class="c">// 1 = 형태의 원점</span>
+
+    <span class="k">var</span> affected = <span class="k">new</span> <span class="t">List</span>&lt;<span class="t">Vector2Int</span>&gt;();
+    <span class="k">if</span> (SearchAbilityMapForValue(2, abilityMap))                 <span class="c">// 2 = 고정 형태 (십자·사각 등)</span>
+        affected.AddRange(GetShapeAbilityTiles(abilityPos, charPos, abilityMap, origin));
+    <span class="k">if</span> (SearchAbilityMapForValue(3, abilityMap))                 <span class="c">// 3 = 맵 끝까지 뻗는 직선 (레이저·관통)</span>
+        affected.AddRange(GetLineAbilityTiles(abilityPos, charPos, abilityMap, origin));
+
+    <span class="c">// 좌표를 실제 타일로 변환 (높이차 z±1 포함, 맵 밖은 필터링)</span>
+    <span class="k">var</span> tiles = <span class="k">new</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt;();
+    <span class="k">foreach</span> (<span class="k">var</span> loc <span class="k">in</span> affected)
+        <span class="k">for</span> (<span class="k">int</span> z = -1; z &lt; 2; z++)
+            <span class="k">if</span> (Managers.Map.TryGetActiveOverlayTile(<span class="k">new</span> <span class="t">Vector3Int</span>(loc.x, loc.y, abilityPos.gridLocation.z + z), <span class="k">out var</span> t))
+                tiles.Add(t);
+
+    <span class="k">return</span> tiles.Count == 0 ? <span class="k">new</span> <span class="t">List</span>&lt;<span class="t">OverlayTile</span>&gt; { abilityPos } : tiles;
+}
+
+<span class="c">// 캐릭터→대상 방향이 우세한 축을 보고 형태 오프셋을 회전시켜 실제 좌표로 변환</span>
+<span class="k">public</span> <span class="t">Vector2Int</span> GetAffectedTile(<span class="k">ref</span> <span class="t">Vector2Int</span> origin, <span class="t">Vector2Int</span> offset, <span class="t">Vector2Int</span> charPos)
+{
+    <span class="t">Vector2Int</span> abs = <span class="k">new</span>(Mathf.Abs(origin.x - charPos.x), Mathf.Abs(origin.y - charPos.y));
+    <span class="t">Vector2Int</span> dir = origin - charPos;
+
+    <span class="k">if</span> (abs.x &gt;= abs.y)   <span class="c">// 좌우 방향이 우세 → 오프셋 그대로</span>
+        <span class="k">return</span> dir.x &lt;= 0 ? origin - offset : origin + offset;
+    <span class="c">// 상하 방향이 우세 → x·y 스왑(90° 회전)</span>
+    <span class="k">return</span> dir.y &lt;= 0
+        ? <span class="k">new</span> <span class="t">Vector2Int</span>(origin.x - offset.y, origin.y - offset.x)
+        : <span class="k">new</span> <span class="t">Vector2Int</span>(origin.x + offset.y, origin.y + offset.x);
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 스킬 형태를 데이터(텍스트)로 분리해 <b>코드 수정 없이 새 범위를 추가</b>할 수 있게 했습니다. 캐릭터와 대상의 방향 벡터에서 우세 축을 판별해 형태를 90° 단위로 회전시키므로, 하나의 정의로 상하좌우 모든 방향의 스킬 범위를 처리합니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">CustomTile.cs · MapEditor.cs — 데이터 기반 맵 툴 (B5·B7)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+
+      <div class="mt-viz">
+        <!-- ① 데이터 시트 -->
+        <div class="mt-stage">
+          <div class="mt-cap">① 데이터 시트</div>
+          <div class="mt-sheet">
+            <span class="h">ID</span><span class="h">Type</span><span class="h">Sprite</span>
+            <span>101</span><span>Monster</span><span>👾</span>
+            <span>201</span><span>Env</span><span>🌳</span>
+            <span>—</span><span>Player</span><span>🚩</span>
+          </div>
+        </div>
+
+        <div class="mt-arrow">→<span class="sub">툴 실행</span></div>
+
+        <!-- ② 에디터 툴이 팔레트 자동 생성 -->
+        <div class="mt-stage">
+          <div class="mt-cap">② CustomTile 자동 생성</div>
+          <div class="mt-tool">
+            <span class="g">⚙️</span>
+            <span>CreateObjectOnTile()</span>
+            <span style="color:var(--text-faint)">Ctrl+Shift+O</span>
+          </div>
+          <div class="mt-palette" style="margin-top:8px">
+            <div class="mt-chip"><span class="ico">👾</span>Monster · 101</div>
+            <div class="mt-chip"><span class="ico">🌳</span>Env · 201</div>
+            <div class="mt-chip"><span class="ico">🚩</span>StartPos</div>
+          </div>
+        </div>
+
+        <div class="mt-arrow">→<span class="sub">그리기</span></div>
+
+        <!-- ③ 타일맵에 배치 → 런타임 스폰 -->
+        <div class="mt-stage">
+          <div class="mt-cap">③ 타일맵에 배치 → 스폰</div>
+          <div class="mt-grid">
+            <span class="mt-cell">🚩</span><span class="mt-cell"></span><span class="mt-cell"></span><span class="mt-cell"></span>
+            <span class="mt-cell"></span><span class="mt-cell"></span><span class="mt-cell">👾</span><span class="mt-cell"></span>
+            <span class="mt-cell"></span><span class="mt-cell"></span><span class="mt-cell"></span><span class="mt-cell">👾</span>
+            <span class="mt-cell"></span><span class="mt-cell">🌳</span><span class="mt-cell"></span><span class="mt-cell"></span>
+          </div>
+        </div>
+
+        <div class="mt-legend">
+          <span>👾 몬스터</span><span>🚩 아군 시작 위치</span><span>🌳 환경물</span>
+        </div>
+      </div>
+
+      <pre><code><span class="c">// 비프로그래머(기획)가 타일 팔레트로 오브젝트를 '찍어' 배치하는 데이터 타일</span>
+<span class="k">public class</span> <span class="t">CustomTile</span> : <span class="t">Tile</span>
+{
+    <span class="k">public</span> <span class="t">Define</span>.<span class="t">EObjectType</span> ObjectType;   <span class="c">// Monster / Player / Env …</span>
+    <span class="k">public int</span> DataId;                      <span class="c">// 스폰할 데이터 ID</span>
+    <span class="k">public bool</span> isStartPos = <span class="k">false</span>;         <span class="c">// 아군 시작 위치</span>
+    <span class="k">public bool</span> isWayPoint = <span class="k">false</span>;
+}
+
+<span class="c">// [에디터 툴] 데이터 시트를 순회하며 CustomTile 에셋을 자동 생성 (Ctrl+Shift+O)</span>
+[<span class="t">MenuItem</span>(<span class="s">"Tools/Create Object Tile Asset %#o"</span>)]
+<span class="k">public static void</span> CreateObjectOnTile()
+{
+    <span class="k">var</span> dic = LoadJson&lt;<span class="t">MonsterDataLoader</span>, <span class="k">int</span>, <span class="t">MonsterData</span>&gt;(<span class="s">"MonsterData"</span>).MakeDict();
+    <span class="k">foreach</span> (<span class="k">var</span> data <span class="k">in</span> dic.Values)
+    {
+        <span class="t">CustomTile</span> tile = <span class="t">ScriptableObject</span>.CreateInstance&lt;<span class="t">CustomTile</span>&gt;();
+        tile.DataId = data.DataId;
+        tile.ObjectType = <span class="t">EObjectType</span>.Monster;
+        tile.sprite = LoadSprite(data.IconImage);
+        <span class="t">AssetDatabase</span>.CreateAsset(tile, $<span class="s">"…/Monster/{data.DataId}_{data.DescriptionTextID}.asset"</span>);
+    }
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 데이터 ID·타입을 담은 <code>CustomTile</code>을 에디터 툴이 시트에서 자동 생성 → 기획자가 타일맵에 '그리듯' 몬스터·시작위치·환경물을 배치하면 런타임이 그대로 스폰합니다.</p>
+    </details>
+  </article>
+
+  <!-- ========== 6. 분기형 컷신 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">🎬</span>
+      <div>
+        <span class="role-tag">설계 · 구현</span>
+        <h3>분기형 컷신 시스템</h3>
+        <div class="sys-items">CutSceneManager.cs · TimelineManager.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">선택지에 따라 흐름이 갈리는 분기형 컷신과 Timeline 연동 연출을 구현했습니다. 데이터 시트 기반으로 동작합니다.</p>
+    <ul class="sys-list">
+      <li><b>분기형 컷신(Branch)</b> — 선택지 ID로 다음 컷신을 분기 (C1)</li>
+      <li><b>Timeline 연동</b> — TimelineManager / RuntimeBinder / Recorder로 연출 재생 (C2)</li>
+      <li>페이드·카메라 이동/줌·캐릭터 표시 등 연출 디렉팅</li>
+      <li>컷신 스킵 / 패스트포워드 / 진행도 SaveData</li>
+    </ul>
+    <div class="tags"><span class="tag">Branching</span><span class="tag">Timeline</span><span class="tag">Data-Driven</span><span class="tag">Callback</span></div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">CutSceneManager.cs — 데이터 기반 선택지</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="k">public void</span> ShowChoices(<span class="t">List</span>&lt;<span class="k">string</span>&gt; choices, <span class="t">List</span>&lt;<span class="k">int</span>&gt; branchDataIDs, <span class="t">Action</span>&lt;<span class="k">int</span>&gt; onSelected)
+{
+    <span class="k">if</span> (choices.Count != branchDataIDs.Count)
+    {
+        Debug.LogError($<span class="s">"선택지 개수({choices.Count})와 분기ID 개수({branchDataIDs.Count}) 불일치"</span>);
+        <span class="k">return</span>;
+    }
+    ClearChoices();
+    onChoiceSelectedCallback = onSelected;
+
+    <span class="k">for</span> (<span class="k">int</span> i = 0; i &lt; choices.Count; i++)
+    {
+        <span class="k">int</span> branchID = branchDataIDs[i];   <span class="c">// 클로저 캡처 버그 방지용 지역 복사</span>
+        <span class="t">GameObject</span> btn = Managers.Resource.Instantiate(<span class="s">"ChoicePanel"</span>, choicePanelParent, <span class="k">false</span>);
+        btn.GetComponentInChildren&lt;<span class="t">Text</span>&gt;().text = choices[i];
+        btn.GetComponent&lt;<span class="t">Button</span>&gt;().onClick.AddListener(() =&gt; OnChoiceButtonClicked(branchID));
+    }
+    choicePanelParent.gameObject.SetActive(<span class="k">true</span>);
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 데이터 시트의 분기 ID에 따라 선택지 버튼을 동적 생성하고, <code>for</code> 인덱스의 클로저 캡처 버그를 지역 변수 복사로 회피했습니다.</p>
+
+      <!-- 캡처 이미지 슬롯: 아래 figure의 주석을 풀고 src 경로를 넣으면 실제 인게임 캡처가 표시됩니다 -->
+      <div class="shot">
+        <!--
+        <figure>
+          <img src="images/cutscene-choices.png" alt="분기형 컷신 선택지 인게임 캡처">
+          <figcaption>인게임 화면 — 데이터로 분기되는 선택지 UI</figcaption>
+        </figure>
+        -->
+        <div class="shot-ph">
+          <span class="ic">🖼️</span>
+          <span class="t">인게임 캡처 이미지 자리 (선택지 화면)</span>
+          <span class="s">캡처 파일을 <code>docs/portfolio/images/</code>에 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제한 뒤 <code>src</code> 경로를 수정하세요.</span>
+        </div>
+      </div>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">TimelineManager.cs — 런타임 Timeline 바인딩 (C2)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// Addressables로 로드한 TimelineAsset을 '런타임 생성 액터'에 바인딩해 재생</span>
+<span class="k">public bool</span> Play(<span class="k">string</span> timelineKey, <span class="t">IEnumerable</span>&lt;<span class="t">RuntimeTimelineActorBinding</span>&gt; actorBindings, <span class="t">Action</span> onFinished)
+{
+    <span class="c">// 트랙 이름 규칙(_Move / _Spine / _Flip)으로 동적 오브젝트를 자동 바인딩</span>
+    _timelineBinder.Bind(_playableDirector, actorBindings);
+    _currentTimelineFinishedCallback = onFinished;
+    _playableDirector.Play();
+    _isPlaying = <span class="k">true</span>;
+    <span class="k">return true</span>;
+}
+
+<span class="c">// 액터 바인딩 정보 — 트랙 키 ↔ 런타임 GameObject</span>
+<span class="k">public struct</span> <span class="t">RuntimeTimelineActorBinding</span>
+{
+    <span class="k">public</span> <span class="k">string</span> ActorKey { <span class="k">get</span>; }        <span class="c">// 트랙 이름 규칙 키</span>
+    <span class="k">public</span> <span class="t">GameObject</span> ActorObject { <span class="k">get</span>; } <span class="c">// 바인딩할 동적 생성 오브젝트</span>
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — 디자인타임에 만든 Timeline을, 런타임에 생성된 캐릭터·카메라에 <b>트랙 이름 규칙</b>으로 자동 바인딩해 재생. 컷신 연출을 데이터(Addressable)와 분리해 관리합니다.</p>
+
+      <!-- 캡처 이미지 슬롯: 아래 figure의 주석을 풀고 src 경로를 넣으면 실제 인게임 캡처가 표시됩니다 -->
+      <div class="shot">
+        <!--
+        <figure>
+          <img src="images/cutscene-timeline.png" alt="Timeline 연출 인게임 캡처">
+          <figcaption>인게임 화면 — Timeline으로 재생되는 컷신 연출</figcaption>
+        </figure>
+        -->
+        <div class="shot-ph">
+          <span class="ic">🖼️</span>
+          <span class="t">인게임 캡처 이미지 자리 (Timeline 연출)</span>
+          <span class="s">캡처 파일을 <code>docs/portfolio/images/</code>에 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제한 뒤 <code>src</code> 경로를 수정하세요.</span>
+        </div>
+      </div>
+    </details>
+  </article>
+
+  <!-- ========== 7. 연출 ========== -->
+  <article class="sys">
+    <div class="sys-head">
+      <span class="sys-icon">🎨</span>
+      <div>
+        <span class="role-tag">구현 · 연출</span>
+        <h3>연출 — Shader Graph · VFX · FMOD</h3>
+        <div class="sys-items">Shader Graph · VFX · SoundManager.cs</div>
+      </div>
+    </div>
+    <p class="sys-desc">게임의 '느낌'을 만드는 연출 레이어를 담당했습니다. 셰이더는 <b>Shader Graph</b>로 제작했습니다.</p>
+    <ul class="sys-list">
+      <li><b>Shader Graph 셰이더</b> — Outline, Shimmer, Alpha Shield, Line Renderer, Screen Transition, Silhouette (F1)</li>
+      <li><b>VFX</b> — 스폰 파티클, Damage/Panic Font, Creature VFX, 마우스 포인터 (F2)</li>
+      <li><b>FMOD 사운드 파이프라인</b> — 레거시 AudioClip과 FMOD 이벤트를 같은 진입점에서 분기 (F4)</li>
+      <li>RuntimeFMODEditor 커스텀 툴로 사운드 작업 효율화</li>
+    </ul>
+    <div class="tags"><span class="tag">Shader Graph</span><span class="tag">VFX</span><span class="tag">FMOD</span><span class="tag">Custom Tool</span></div>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">Shader Graph — 노드 기반 셰이더 (F1)</span><span class="right"><span class="lang">Shader Graph</span><span class="chev">▸</span></span></summary>
+      <p class="code-note" style="margin:0 0 12px"><b>구현</b> — Outline, Shimmer, Metaball, Screen Transition 등의 셰이더를 <b>Shader Graph</b>로 제작했습니다. 노드 기반이라 C# 코드 대신 적용 결과를 아래에 첨부합니다.</p>
+
+      <div class="shot-grid">
+        <figure>
+          <img src="images/outline_image.png" alt="Outline 셰이더 적용 결과" loading="lazy">
+          <figcaption>Outline 셰이더 — 외곽선 강조</figcaption>
+        </figure>
+        <figure>
+          <img src="images/shimmer_image.png" alt="Shimmer 셰이더 적용 결과" loading="lazy">
+          <figcaption>Shimmer 셰이더 — 반짝임 효과</figcaption>
+        </figure>
+        <figure>
+          <img src="images/metaball_image.png" alt="Metaball 셰이더 적용 결과" loading="lazy">
+          <figcaption>Metaball 셰이더 — 유체 융합 효과</figcaption>
+        </figure>
+        <figure>
+          <img src="images/transition_Image.png" alt="Screen Transition 셰이더 적용 결과" loading="lazy">
+          <figcaption>Screen Transition 셰이더 — 화면 전환</figcaption>
+        </figure>
+      </div>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">SoundManager.cs — FMOD / AudioClip 분기</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="k">private const string</span> FMOD_EVENT_PREFIX = <span class="s">"event:/"</span>;
+
+<span class="c">// 같은 Play() 진입점에서 FMOD 이벤트와 레거시 AudioClip을 경로로 자동 분기</span>
+<span class="k">public void</span> Play(<span class="t">Define</span>.<span class="t">ESound</span> type, <span class="k">string</span> key, <span class="k">float</span> volume = 1.0f, <span class="k">float</span> pitch = 1.0f)
+{
+    <span class="k">if</span> (IsFmodEventPath(key))
+    {
+        Play(type, <span class="t">RuntimeManager</span>.PathToEventReference(key), volume, pitch);
+        <span class="k">return</span>;
+    }
+    <span class="c">// … 이하 AudioSource 기반 재생 경로</span>
+}
+
+<span class="k">private bool</span> IsFmodEventPath(<span class="k">string</span> key) =&gt; key.StartsWith(FMOD_EVENT_PREFIX);</code></pre>
+      <p class="code-note"><b>포인트</b> — 기존 AudioClip 사운드와 FMOD 이벤트를 같은 <code>Play()</code> 진입점에서 경로로 자동 분기. 호출부 수정 없이 FMOD로 점진 이행할 수 있도록 설계했습니다.</p>
+    </details>
+
+    <details class="code-block">
+      <summary class="code-head"><span class="fname">ObjectManager.cs — 데이터 기반 VFX 스폰 (F2)</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+      <pre><code><span class="c">// VFXData ID로 VFX 프리팹을 생성 — 코드에 프리팹 경로 하드코딩 X</span>
+<span class="k">public</span> <span class="t">VFXController</span> SpawnVFX(<span class="k">int</span> templatedId, <span class="t">Vector3</span> pos, <span class="k">bool</span> isFlipped)
+{
+    <span class="k">if</span> (TryGetVFXData(templatedId, <span class="k">out</span> <span class="t">VFXData</span> data) == <span class="k">false</span>) <span class="k">return null</span>;
+
+    <span class="t">GameObject</span> vfx = Managers.Resource.Instantiate(data.VFXName, VFXRoot, <span class="k">false</span>);
+    vfx.transform.position = pos;
+
+    <span class="t">VFXController</span> controller = vfx.GetOrAddComponent&lt;<span class="t">VFXController</span>&gt;();
+    controller.SetInfo(data, isFlipped);   <span class="c">// 방향(flip)·재생시간 등을 데이터로 설정</span>
+    <span class="k">return</span> controller;
+}</code></pre>
+      <p class="code-note"><b>포인트</b> — VFX도 <code>VFXData</code> ID로 호출 — 스킬·피격·폭발 등에서 ID만 넘기면 Addressable 프리팹을 생성·설정합니다. (셰이더는 <b>Shader Graph 에셋</b>으로 제작되어 별도 C# 코드가 없습니다.)</p>
+    </details>
+  </article>
+
+</section>
+
+<!-- ====================== TROUBLESHOOTING ====================== -->
+<section id="troubleshooting">
+  <span class="eyebrow">Engineering Highlights</span>
+  <h2>문제 해결 사례</h2>
+  <p class="section-sub">각 사례에 <b>배경 설명</b>을 먼저 두고 증상 → 원인 → 해결 → 결과로 정리했습니다. 프로젝트를 모르는 분도 어떤 문제를 어떻게 파고들어 해결했는지 따라올 수 있도록 썼습니다.</p>
+
+  <div class="ts">
+
+    <!-- G1 -->
+    <div class="ts-item">
+      <h3><span class="badge">타이밍</span> 웨이브 전환 시 다음 턴이 멈추는 버그</h3>
+      <p class="ts-bg">이 게임은 화면의 적을 모두 처치하면 다음 웨이브로 넘어가고, 특정 조건에서 아군이 강해지는 '광폭화' 상태로 들어가며 안내 팝업이 뜹니다.</p>
+      <div class="ts-row">
+        <div class="lbl">증상</div><div class="txt">특정 스킬로 마지막 적을 처치하고 다음 웨이브로 넘어가면, 광폭화 안내 팝업이 뜨지 않고 플레이어가 다시 행동할 수도 없게 되는 현상(행동 횟수가 리셋되지 않음).</div>
+        <div class="lbl">원인</div><div class="txt">다음 턴을 준비하는 코드는 "스킬 연출이 완전히 끝났는가"를 확인한 뒤에야 진행됐었습니다. 그런데 한 캐릭터의 공격 애니메이션이 <b>실제로 적이 맞는 순간(1.16초)보다 1.77초나 더 길게(2.93초)</b> 재생되도록 만들어져 있었습니다. 적은 이미 죽었는데도 연출이 안 끝난 것으로 판단되어, 다음 턴 준비 단계 전체가 영영 시작되지 못했습니다.</div>
+        <div class="lbl">해결</div><div class="txt"><b>① 근본 원인 제거:</b> 애니메이션 데이터에서 불필요하게 늘어져 있던 마지막 구간을 잘라 길이를 2초로 줄여, 타격 직후 연출이 제때 끝나도록 했습니다. <b>② 안전장치:</b> 그래도 막힐 경우 1초 뒤 강제로 빠져나가게 하고, 무엇이 진행을 막았는지 로그로 남겨 재발 시 바로 추적할 수 있게 했습니다.</div>
+        <div class="lbl">결과</div><div class="txt">웨이브 전환 → 광폭화 → 튜토리얼이 항상 정상 순서로 동작. "연출 길이가 게임 로직을 멈출 수 있다"는 구조적 위험까지 문서로 정리해 재발을 예방했습니다.</div>
+      </div>
+      <details class="code-block">
+        <summary class="code-head"><span class="fname">TurnManager.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+        <pre><code><span class="c">// 웨이브 클리어 후 새 웨이브의 적 턴을 '행동 없이' 넘기고 다음 아군 턴 시작</span>
+<span class="k">public async void</span> SkipEnemyTurnAfterWaveClear()
+{
+    <span class="k">await</span> UniTask.WaitUntil(() =&gt; !Managers.Game.IsPerforming);
+    <span class="k">await</span> UniTask.WaitUntil(() =&gt; activePlayerList.All(p =&gt; p.CameraReady &amp;&amp; !p.UsingSkill));
+
+    CurrentPhase = TurnPhase.EnemyTurn;
+    MarkActiveMonstersMoved();   <span class="c">// 새 웨이브 몬스터를 '이동 완료'로 표시 → 행동 건너뜀</span>
+    StartEnemyTurn(<span class="k">false</span>);       <span class="c">// false: 다음 아군 턴 전환 연출 생략</span>
+}
+
+<span class="k">private void</span> MarkActiveMonstersMoved()
+{
+    <span class="k">foreach</span> (<span class="k">var</span> monster <span class="k">in</span> activeMonsterList)
+        <span class="k">if</span> (monster != <span class="k">null</span> &amp;&amp; monster.IsAlive) monster.IsMoved = <span class="k">true</span>;
+}</code></pre>
+        <p class="code-note"><b>핵심</b> — 새 웨이브의 적을 이미 행동한 상태로 표시하고 연출 플래그를 분리해, 웨이브 경계에서의 턴 경합을 제거했습니다.</p>
+      </details>
+    </div>
+
+    <!-- G2 -->
+    <div class="ts-item">
+      <h3><span class="badge">동기화</span> 컷신 중 카메라가 제멋대로 움직이는 문제</h3>
+      <p class="ts-bg">전투 화면의 카메라는 평소엔 캐릭터를 자동으로 따라가고 전투 시엔 확대됩니다. 컷신(연출 장면)이 재생될 땐 미리 정해둔 위치·크기로 카메라가 고정되어야 합니다.</p>
+      <div class="ts-row">
+        <div class="lbl">증상</div><div class="txt">컷신이 재생되는 도중에도 평소의 카메라 자동 추적과 전투 확대 동작이 끼어들어, 카메라 위치와 화면 크기가 연출 의도와 어긋나고 컷신 건너뛰기도 제대로 동작하지 않음.</div>
+        <div class="lbl">원인</div><div class="txt">카메라를 움직이는 코드가 여러 곳(자동 추적, 전투 확대 애니메이션, 컷신)에 흩어져 있어 동시에 실행됐습니다. 게다가 먼저 시작된 카메라 이동이 <b>뒤늦게 끝나면서 컷신이 설정한 위치를 다시 덮어쓰는</b> 일도 있었습니다.</div>
+        <div class="lbl">해결</div><div class="txt">컷신 중에는 외부의 카메라 조작을 한곳에서 차단하는 '잠금' 장치를 두고, 진행 중이던 이동에 버전 번호를 매겨 <b>한 박자 늦게 도착한 명령은 무시</b>하도록 했습니다. 여기에 매 프레임 카메라를 정해진 위치로 다시 고정해, 어떤 경로로도 연출이 흔들리지 않게 했습니다.</div>
+        <div class="lbl">결과</div><div class="txt">'잠금 + 늦은 명령 무효화 + 매 프레임 고정'의 3중 안전장치로, 어느 경로의 카메라 간섭도 컷신 연출을 깨뜨리지 못하게 만들었습니다.</div>
+      </div>
+      <details class="code-block">
+        <summary class="code-head"><span class="fname">CameraController.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+        <pre><code><span class="k">private int</span> _cameraTweenVersion;       <span class="c">// 진행 중 트윈을 무효화하기 위한 버전 카운터</span>
+
+<span class="k">private bool</span> IsCameraControlBlocked()
+    =&gt; _isTimelineCameraControl || _isCameraControlLocked
+       || (Managers.CutScene != <span class="k">null</span> &amp;&amp; Managers.CutScene.IsPlaying);
+
+<span class="c">// 컷신/타임라인 진입 시 모든 카메라 트윈을 죽이고 버전을 올려 stale 콜백 차단</span>
+<span class="k">private void</span> KillAllCameraTweens(<span class="k">bool</span> notifyPendingCreature = <span class="k">true</span>)
+{
+    _cameraTweenVersion++;
+    transform.DOKill();
+    _currentSequence?.Kill();
+}
+
+<span class="c">// 매 프레임 컷신 카메라 상태를 강제 고정 (외부 간섭 무시)</span>
+<span class="k">private void</span> EnforceCutSceneCameraControl()
+{
+    <span class="k">if</span> (_isCameraControlLocked == <span class="k">false</span>) <span class="k">return</span>;
+    transform.position = _lockedCameraPosition;
+    <span class="k">if</span> (_lockedCamera != <span class="k">null</span>)
+        _lockedCamera.orthographicSize = _lockedCameraOrthographicSize;
+}</code></pre>
+        <p class="code-note"><b>핵심</b> — '잠금 플래그 + 트윈 버전 무효화 + 매 프레임 강제 고정'의 3중 안전장치로, 어떤 경로의 카메라 간섭도 컷신 연출을 깨지 못하게 했습니다.</p>
+      </details>
+    </div>
+
+    <!-- G3 -->
+    <div class="ts-item">
+      <h3><span class="badge">성능</span> 마우스를 올려두기만 해도 끊기는 프레임</h3>
+      <p class="ts-bg">전술 게임이라 마우스를 타일 위에 올리면 이동 가능 범위·스킬 사거리·예상 경로가 실시간으로 표시됩니다. 이 계산을 처리하는 코드가 성능 병목이었습니다.</p>
+      <div class="ts-row">
+        <div class="lbl">증상</div><div class="txt">Unity 프로파일러(성능 측정 도구)로 보면 마우스 처리 코드가 매 프레임 큰 비용을 차지했고, <b>마우스를 같은 칸 위에 가만히 올려둬도</b> 프레임이 떨어졌습니다.</div>
+        <div class="lbl">원인</div><div class="txt">프로파일러로 원인을 역추적해보니, 마우스가 가리키는 대상이 바뀌지 않았는데도 매 프레임 ① 무엇을 가리키는지 Raycast 검사 ② 이동·스킬 범위 재계산 ③ 최단 경로 재탐색 ④ 타일 표시 갱신을 모두 반복하고 있었습니다. 게다가 <b>실제 스킬 사거리와 미리보기용 사거리가 같은 데이터를 공유</b>해, 성능 문제가 사거리 오판정 버그까지 일으키고 있었습니다.</div>
+        <div class="lbl">해결</div><div class="txt">발견한 10개의 원인을 영향도 순으로 정리한 뒤, 핵심은 <b>"가리키는 대상이 실제로 바뀐 프레임에만 무거운 계산을 실행"</b>하도록 바꾼 것입니다. 더해서 실제/미리보기 사거리 데이터를 분리해(판정 버그 동시 해결), 매번 새로 만들던 임시 메모리를 재사용하고, 반복 조회를 빠른 자료구조로 교체했습니다.</div>
+        <div class="lbl">결과</div><div class="txt">마우스가 멈춰 있을 때의 불필요한 계산과 메모리 낭비를 제거해 프레임 드랍을 해소하고, <b>성능 개선과 사거리 정확성을 동시에</b> 잡았습니다. 모든 변경은 작은 단위로 적용하며 프로파일러·플레이테스트로 검증했습니다.</div>
+      </div>
+      <details class="code-block">
+        <summary class="code-head"><span class="fname">PlayerMouseController.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+        <pre><code><span class="c">// 마우스 좌표가 아니라 실제 hover 컨텍스트가 바뀐 경우에만 갱신 본문을 실행</span>
+<span class="k">private void</span> SyncHoverIfNeeded(<span class="t">Player</span> controlPlayer, <span class="t">EPlayerControlState</span> controlState)
+{
+    <span class="k">if</span> (!CanSyncHover(controlPlayer)) { _wasHoverSyncBlocked = <span class="k">true</span>; <span class="k">return</span>; }
+
+    <span class="t">RayCastResult</span> hit = GetObjects(_input.Player.MousePosition.ReadValue&lt;<span class="t">Vector2</span>&gt;());
+
+    <span class="k">if</span> (!_isHoverDirty &amp;&amp; !_wasHoverSyncBlocked &amp;&amp; _hasHoverSnapshot
+        &amp;&amp; _lastHoverTile    == hit.tile
+        &amp;&amp; _lastHoverPlayer  == hit.player
+        &amp;&amp; _lastHoverMonster == hit.monster)   <span class="c">// 이전 스냅샷과 동일하면</span>
+        <span class="k">return</span>;                                 <span class="c">// → 무거운 갱신을 건너뜀</span>
+
+    SyncHover(controlPlayer, controlState, <span class="c">/* … */</span> hit);
+}</code></pre>
+        <p class="code-note"><b>핵심</b> — '값이 바뀐 프레임만 일한다'는 더티 체킹으로, 정지 상태에서의 불필요한 레이캐스트·UI 갱신을 제거해 프레임 드랍을 해소했습니다.</p>
+      </details>
+    </div>
+
+    <!-- G4 -->
+    <div class="ts-item">
+      <h3><span class="badge">구조</span> 스테이지에 맞춰 카메라가 보여줄 범위 제한하기</h3>
+      <p class="ts-bg">한 전투 맵은 여러 스테이지로 나뉘어 순차 진행됩니다. 카메라는 현재 진행 중인 스테이지 영역만 보여줘야 하고, 아직 진행하지 않은 뒷부분이나 맵 밖이 보이면 안 됩니다.</p>
+      <div class="ts-row">
+        <div class="lbl">증상</div><div class="txt">플레이어가 카메라를 직접 움직이거나 확대/축소하면 전술 맵 바깥의 검은 빈 공간이 노출되고, 스테이지가 바뀌어도 카메라가 보여주는 범위가 실제 진행 영역과 어긋났습니다.</div>
+        <div class="lbl">원인</div><div class="txt">카메라가 보여줄 수 있는 범위를 맵 전체로 잡고 있었고, 스테이지가 진행돼도 그 범위가 갱신되지 않았습니다. 또 맵 데이터에서 '캐릭터가 이동할 수 있는 칸'과 '이동은 못 하지만 화면에는 보여줘야 하는 여백 칸'이 구분돼 있지 않았습니다.</div>
+        <div class="lbl">해결</div><div class="txt">스테이지를 클리어할 때마다 보여줄 영역을 <b>누적해서 확장</b>하도록 바꾸고, 맵 데이터에 '이동 가능 칸'과 '화면 여백 전용 칸'을 구분해 표시했습니다. 카메라 범위는 이 두 종류 칸을 합쳐 매 스테이지마다 다시 계산합니다.</div>
+        <div class="lbl">결과</div><div class="txt">진행한 만큼만 카메라 범위가 넓어지고, 이동은 못 하는 여백 영역까지 자연스럽게 화면에 담되 아직 진행하지 않은 다음 스테이지가 미리 보이는 일은 차단했습니다.</div>
+      </div>
+      <details class="code-block">
+        <summary class="code-head"><span class="fname">CameraController.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+        <pre><code><span class="c">// 활성 스테이지의 OverlayTile 영역으로부터 카메라 경계를 동적 재구성</span>
+<span class="k">public void</span> RefreshCameraBoundsFromOverlayTiles(<span class="k">float</span> margin = 0f)
+{
+    <span class="k">bool</span> hasOverlayBounds = Managers.Map.TryGetOverlayTileBounds(margin, <span class="k">out</span> <span class="t">Bounds</span> overlayBounds);
+    <span class="k">bool</span> hasStageBounds  = hasOverlayBounds
+        &amp;&amp; Managers.Map.TryGetStageCameraCollisionBounds(margin, overlayBounds, <span class="k">out</span> <span class="t">Bounds</span> stageBounds);
+
+    <span class="k">if</span> (hasStageBounds)        { _cameraBounds = stageBounds;   _hasCameraBounds = <span class="k">true</span>; }
+    <span class="k">else if</span> (hasOverlayBounds) { _cameraBounds = overlayBounds; _hasCameraBounds = <span class="k">true</span>; }
+
+    <span class="k">if</span> (_hasCameraBounds) ClampCameraToBounds();   <span class="c">// 새 경계로 즉시 클램프</span>
+}</code></pre>
+        <p class="code-note"><b>핵심</b> — 카메라 경계를 '현재 스테이지의 타일 영역'에서 파생시켜, 스테이지가 바뀔 때마다 보이는 범위가 정확히 재구성되도록 했습니다.</p>
+      </details>
+    </div>
+
+    <!-- B8 -->
+    <div class="ts-item">
+      <h3><span class="badge">카메라</span> 해상도·줌이 달라져도 경계를 벗어나지 않는 카메라</h3>
+      <p class="ts-bg">앞의 사례에서 정한 '보여줄 범위'를 실제 카메라가 어떤 상황에서도 지키도록 만드는 작업입니다. 플레이어는 마우스휠로 확대/축소할 수 있고, 모니터 화면 비율도 제각각입니다.</p>
+      <div class="ts-row">
+        <div class="lbl">증상</div><div class="txt">카메라 중심까지의 거리만 제한하니, 화면 비율이 바뀌거나 확대/축소가 들어가면 경계 밖 빈 공간이 보이고, 마우스휠로 축소하면 정해둔 범위를 넘어갔습니다. 전투 연출에서 두 캐릭터가 한 화면에 안 담기기도 했습니다.</div>
+        <div class="lbl">원인</div><div class="txt">카메라의 '중심점'만 범위 안에 가뒀을 뿐, 실제 <b>화면에 보이는 영역의 가로·세로 크기</b>(줌 정도와 화면 비율에 따라 달라짐)를 계산에 넣지 않았습니다. 축소 한계도 없어 경계보다 더 멀리 축소할 수 있었습니다.</div>
+        <div class="lbl">해결</div><div class="txt">현재 줌과 화면 비율로 <b>화면에 실제로 보이는 폭·높이를 구해</b> 가로·세로를 따로 제한했습니다(범위가 화면보다 작으면 중앙에 고정). 축소에도 한계를 두고, 전투 시엔 두 캐릭터의 중간 지점으로 이동하며 둘 사이 거리에 맞춰 줌을 조절합니다.</div>
+        <div class="lbl">결과</div><div class="txt">어떤 해상도·줌 단계에서도 빈 공간 없이 카메라가 범위 안에 유지되고, 전투 연출은 항상 양쪽 캐릭터를 한 화면에 담습니다.</div>
+      </div>
+      <details class="code-block">
+        <summary class="code-head"><span class="fname">CameraController.cs</span><span class="right"><span class="lang">C#</span><span class="chev">▸</span></span></summary>
+        <pre><code><span class="c">// X·Y를 독립적으로 Clamp → 화면비가 달라도 직사각형 경계 밖으로 안 나감</span>
+<span class="k">private</span> <span class="t">Vector3</span> ClampCameraPos(<span class="t">Vector3</span> position)
+{
+    <span class="k">if</span> (!_hasCameraBounds) <span class="k">return</span> position;
+
+    <span class="t">Camera</span> cam = GetComponent&lt;<span class="t">Camera</span>&gt;();
+    <span class="k">float</span> halfHeight = cam.orthographicSize;
+    <span class="k">float</span> halfWidth  = halfHeight * cam.aspect;
+
+    <span class="k">float</span> minX = _cameraBounds.min.x + halfWidth,  maxX = _cameraBounds.max.x - halfWidth;
+    <span class="k">float</span> minY = _cameraBounds.min.y + halfHeight, maxY = _cameraBounds.max.y - halfHeight;
+
+    <span class="c">// 경계가 화면보다 작으면 중앙 고정, 아니면 범위 내로 제한</span>
+    position.x = minX &gt; maxX ? _cameraBounds.center.x : <span class="t">Mathf</span>.Clamp(position.x, minX, maxX);
+    position.y = minY &gt; maxY ? _cameraBounds.center.y : <span class="t">Mathf</span>.Clamp(position.y, minY, maxY);
+    <span class="k">return</span> position;
+}</code></pre>
+        <p class="code-note"><b>핵심</b> — 화면비·줌을 반영해 X·Y를 따로 클램프하고, 경계가 화면보다 작은 예외를 중앙 고정으로 폴백 처리해 어떤 해상도에서도 빈 공간 없이 카메라가 동작합니다.</p>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================== FOOTER / CONTACT ====================== -->
+<footer id="contact">
+  <div class="footer-inner">
+    <span class="eyebrow">Contact</span>
+    <h2>연락처</h2>
+    <p class="section-sub">함께 일하고 싶으시다면 언제든 연락 주세요.</p>
+
+    <div class="contact">
+      <div class="c"><div class="k">이름</div><div class="v">양민호</div></div>
+      <div class="c"><div class="k">연락처</div><div class="v">010-4509-2677</div></div>
+      <div class="c"><div class="k">이메일</div><div class="v"><a href="mailto:equation0703@naver.com">equation0703@naver.com</a></div></div>
+      <div class="c"><div class="k">Github</div><div class="v"><a href="https://github.com/GEMPRayelle" target="_blank" rel="noopener">github.com/GEMPRayelle</a></div></div>
+    </div>
+
+    <p class="foot-note">
+      ※ 본 포트폴리오의 모든 수치는 Project Volcain Git 저장소 커밋 기록(Rayelle 기준, 2025.07–현재, 진행 중)을 근거로 작성되었습니다.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
