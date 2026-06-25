@@ -327,10 +327,15 @@
   .placeholder { color: var(--accent-2); background: rgba(255,177,61,.1); padding: 1px 7px; border-radius: 5px; font-size: .9em; }
   .foot-note { color: var(--text-faint); font-size: .8rem; margin-top: 34px; }
 
+  .project-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+  .project-img-slot { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; aspect-ratio: 16/9; }
+  .project-img-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
   @media (max-width: 860px) {
     .stat-grid, .meta-grid { grid-template-columns: repeat(2,1fr); }
     .skill-cols, .contact { grid-template-columns: 1fr; }
     .ts-row { grid-template-columns: 1fr; gap: 2px; }
     .cd-cols { grid-template-columns: repeat(2,1fr); }
     .shot-grid { grid-template-columns: 1fr; }
+    .project-imgs { grid-template-columns: 1fr; }
   }
