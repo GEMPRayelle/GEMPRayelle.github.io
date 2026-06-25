@@ -188,6 +188,7 @@
   .ts-row { display: grid; grid-template-columns: 70px 1fr; gap: 6px 14px; margin: 10px 0; font-size: .92rem; }
   .ts-row .lbl { color: var(--text-faint); font-weight: 700; }
   .ts-row .txt { color: var(--text-dim); }
+  .ts-row .txt b { color: var(--accent-2); font-weight: 700; }   /* 핵심 강조 */
 
   /* ---------- ShapeParser 시각화 ---------- */
   .sp-viz { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 22px; padding: 18px; margin: 0 0 14px; background: rgba(255,255,255,.025); border: 1px solid var(--border); border-radius: 10px; }
