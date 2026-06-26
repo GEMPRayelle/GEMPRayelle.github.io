@@ -95,7 +95,7 @@
     <div class="skill-col">
       <h3>아키텍처 · 데이터</h3>
       <ul>
-        <li>로케이터 패턴 매니저 시스템</li>
+        <li>서비스 로케이터 패턴 매니저 시스템</li>
         <li>Addressable 리소스 관리 / 프리로드</li>
         <li>Excel → JSON 데이터 파이프라인</li>
         <li>enum 기반 UI 자동 바인딩</li>
@@ -123,7 +123,7 @@
 
   <div class="project-card">
     <p class="lead" style="margin:0">
-      타일 기반 턴제 전투를 중심으로, <b style="color:var(--text)">사기·충성도 시스템</b>과 플레이어/몬스터/환경 오브젝트를 분리한
+      타일 기반 턴제 전투를 중심으로, <b style="color:var(--text)">사기·충성도 시스템</b>과 주변 환경 오브젝트와 상호작용이 가능한
       구조의 전술 SRPG입니다. 전투 스테이지와 로비 씬, 스토리 컷신이 유기적으로 연결되는 형태로,
       저는 이 게임의 <b style="color:var(--text)">클라이언트 핵심 시스템 전반 설계와 프로그래밍을</b> 담당했습니다.
     </p>
@@ -288,7 +288,7 @@
         <div class="sys-items">Managers.cs · UI_Base.cs</div>
       </div>
     </div>
-    <p class="sys-desc">게임 전체가 올라탈 토대를 직접 설계했습니다. 전역 서비스는 <b>로케이터 패턴</b>으로, UI 참조는 <b>enum 기반 자동 바인딩</b>으로 통일했습니다.</p>
+    <p class="sys-desc">게임 전체가 올라탈 토대를 직접 설계했습니다. 전역 서비스는 <b>서비스 로케이터 패턴</b>으로, UI 참조는 <b>enum 기반 자동 바인딩</b>으로 통일했습니다.</p>
     <ul class="sys-list">
       <li>모든 전역 서비스를 <code>Managers.XXX</code> 단일 진입점으로 통일</li>
       <li><b>Core(엔진) ↔ Contents(게임 로직)</b> 계층 분리 — 의존 방향을 단방향으로 강제</li>
