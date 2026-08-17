@@ -2078,16 +2078,18 @@ workbook = openpyxl.load_workbook(master_path, data_only=<span class="k">True</s
     </details>
 
     <!-- 캡처 이미지 슬롯: 아래 figure의 주석을 풀고 src 경로를 넣으면 실제 인게임 캡처가 표시됩니다 -->
-    <!--
-    <figure style="margin:0 0 14px">
-      <img src="images/localization-furigana.png" alt="일본어 후리가나 적용 인게임 캡처">
-      <figcaption>일본어 컷신 — 한자 위 후리가나 오버레이</figcaption>
-    </figure>
-    -->
-    <div class="shot-ph">
-      <span class="ic">🖼️</span>
-      <span class="t">인게임 캡처 이미지 자리 (일본어 후리가나)</span>
-      <span class="s">캡처 파일을 <code>docs/portfolio/images/</code>에 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제한 뒤 <code>src</code> 경로를 수정하세요.</span>
+    <div class="shot">
+      <figure>
+        <img src="images/localization-furigana.png" alt="일본어 후리가나 적용 인게임 캡처" loading="lazy">
+        <figcaption>일본어 컷신 — 한자 위에 후리가나가 오버레이된 모습</figcaption>
+      </figure>
+      <!--
+        <div class="shot-ph">
+          <span class="ic">🖼️</span>
+          <span class="t">인게임 캡처 이미지 자리 (일본어 후리가나)</span>
+          <span class="s">캡처 파일을 <code>docs/portfolio/images/</code>에 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제한 뒤 <code>src</code> 경로를 수정하세요.</span>
+        </div>
+      -->
     </div>
   </article>
 
@@ -2132,18 +2134,10 @@ workbook = openpyxl.load_workbook(master_path, data_only=<span class="k">True</s
           <figcaption>Screen Transition 셰이더 — 화면 전환</figcaption>
         </figure>
 
-        <!-- Glitch 셰이더 이미지 슬롯: images/glitch_image.png 를 넣고 아래 figure 주석을 해제하면 표시됩니다 -->
-        <!--
         <figure>
-          <img src="images/glitch_image.png" alt="Glitch 셰이더 적용 결과" loading="lazy">
+          <img src="images/glitch_Image.png" alt="Glitch 셰이더 적용 결과" loading="lazy">
           <figcaption>Glitch 셰이더 — 타이틀 로고 글리치</figcaption>
         </figure>
-        -->
-        <div class="shot-ph">
-          <span class="ic">🖼️</span>
-          <span class="t">Glitch 셰이더 이미지 자리 (타이틀 로고)</span>
-          <span class="s">이미지를 <code>docs/portfolio/images/glitch_image.png</code>로 넣고, 위 <code>&lt;figure&gt;</code> 주석을 해제하세요.</span>
-        </div>
       </div>
       <p class="code-note"><b>Glitch</b> — 타이틀 로고에 적용한 스캔라인/색수차 셰이더. 공유 머티리얼 오염을 막기 위해 런타임에 인스턴스로 복제한 뒤, <code>_GlitchAmount</code>를 DOTween 시퀀스로 <b>1~3초 랜덤 간격</b>마다 튀기고 60% 확률로 약한 잔향을 한 번 더 재생합니다. 강도를 1.0으로 올리면 스캔라인 마스크가 전면 적용되어 Emission(HDR) 밝기가 크게 떨어지므로 0.6을 상한으로 잡았습니다.</p>
     </details>
